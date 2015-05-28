@@ -1,8 +1,7 @@
 ---
 layout: post
 title: First Post
+published: true
 ---
-
-#First Post
 
 Just trying it out first.

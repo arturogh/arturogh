@@ -4,13 +4,24 @@
  <title>Arturo Goicochea</title>
  <link href="http://arturogh.github.iohttp://arturogh.github.io/atom.xml" rel="self"/>
  <link href="http://arturogh.github.iohttp://arturogh.github.io/"/>
- <updated>2015-05-28T05:34:23-05:00</updated>
+ <updated>2015-05-28T05:38:46-05:00</updated>
  <id>http://arturogh.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Hello Blog</title>
+   <link href="http://arturogh.github.io/2015/05/28/hello-blog/"/>
+   <updated>2015-05-28T00:00:00-05:00</updated>
+   <id>http://arturogh.github.iohttp://arturogh.github.io/2015/05/28/hello-blog</id>
+   <content type="html">&lt;h1 id=&quot;first-post&quot;&gt;First Post&lt;/h1&gt;
+
+&lt;p&gt;Just trying it out first.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Lanyon</title>

@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               'Arturo Goicochea'
 tagline:             '<a href="http://arturogoicochea.com">UX Designer</a> + <a href="http://arturo.photos">Photographer</a>'
 description:         "Hi, lets talk! My thing is being critical, analytical and above all fostering creativity. I can't bear spending a day without <em>creating</em> something."
-url:                 http://arturogh.github.io
+url:                 'http://arturogh.github.io'
 baseurl:             'http://arturogh.github.io'
 paginate:            5
 

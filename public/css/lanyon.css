@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  text-align: center;
 }
 .masthead-title small a {
   color: #83B1CC;
@@ -149,8 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   overflow-y: auto;
   font-size: .875rem; /* 15px */
-  color: rgba(255,255,255,.6);
-  background-color: #202020;
+  color: #555;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
   font-weight: 300;
-  color: #fff;
+  color: #555;
 }
 .sidebar-item {
   padding: 1rem;
@@ -215,14 +215,14 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle {
   position: absolute;
   top:  .8rem;
-  left: .5rem;
+  left: 2rem;
   display: block;
   padding: .4rem 0;
   color: #83B1CC;
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 

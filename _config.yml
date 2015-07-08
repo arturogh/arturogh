@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               'Arturo Goicochea'
-tagline:             '<a href="http://arturogoicochea.com">UX Designer</a> + <a href="http://arturo.photos">Photographer</a>'
+tagline:             'UX'
 description:         "Hi, lets talk! My thing is being critical, analytical and above all fostering creativity. I can't bear spending a day without <em>creating</em> something."
 url:                 'http://arturogh.github.io'
 baseurl:             'http://arturogh.github.io'
@@ -14,9 +14,6 @@ paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
-
-# Custom vars
-version:             1.0.0
+  name:              Arturo Goicochea
+  twitter:           https://twitter.com/arturogoicochea
+  email:             arturo@arturogoicochea.com

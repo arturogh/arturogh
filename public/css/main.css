@@ -815,6 +815,10 @@ header {
       font-weight: 300;
       margin: 0;
       color: #1A1A1A; }
+      header .title h1 a {
+        color: inherit; }
+        header .title h1 a:hover {
+          color: inherit; }
       @media screen and (max-width: 768px) {
         header .title h1 {
           font-size: 1.9em; } }

@@ -585,6 +585,7 @@ picture {
 .footer {
   background: #355f90;
   padding: 3.84em 1.618em;
+  margin-top: 4em;
   width: 100%; }
   .footer .footer-links {
     margin-bottom: 1.92em; }

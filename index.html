@@ -12,7 +12,7 @@ title: Blog
         <h2 class="flex-title">{{ post.title }}</h2>
         <p>{{post.excerpt}}</p>     
       </div>
-      <div class="image" style="background:url({{post.image}}}); background-size: cover; background-position: center center;"></div>
+      <div class="image" style="background:url({{site.baseurl}}/public/images/{{post.image}}); background-size: cover; background-position: center center;"></div>
     </a>
 
     {% endfor %}
@@ -23,7 +23,7 @@ title: Blog
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older"></span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
@@ -32,7 +32,7 @@ title: Blog
       <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer"></span>
   {% endif %}
 </div>
 

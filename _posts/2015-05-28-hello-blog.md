@@ -5,6 +5,6 @@ published: true
 image: post-1-img.jpg
 ---
 
-<img src="{{site.baseurl}}/public/images/post-1-img.jpg" alt="">
+<img src="{{site.baseurl}}/public/images/long-img-1.jpg" alt="">
 
 Just trying it out first.

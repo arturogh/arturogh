@@ -337,7 +337,6 @@ picture {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -531,8 +530,8 @@ picture {
       position: relative; }
     .flex-boxes-posts .flex-box .image {
       box-shadow: inset 0 0 1px #ddd, 0 2px 4px #e6e6e6;
-      height: auto;
-      width: 100%;
+      height: 282px;
+      width: 282px;
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -733,6 +732,9 @@ body {
   @media screen and (min-width: 750px) and (max-width: 1000px) and (max-width: 1111px) {
     body.content .filter-menu {
       padding: 1em 0 0; } }
+
+section {
+  padding-top: 2em; }
 
 header {
   max-width: 68em;
@@ -987,7 +989,7 @@ section {
   section h2 {
     font-size: 3.4em;
     font-weight: 300;
-    padding: 0.6em 0 0.2em; }
+    padding: 0.2em 0; }
     @media screen and (max-width: 767px) {
       section h2 {
         font-size: 2em;

@@ -3,7 +3,7 @@ layout: post
 title: Defend your hobby
 published: true
 image: "post-1-img.jpg"
-excerpt: A post about why hobbies can be powerful and how to keep to going.
+excerpt: A post about why hobbies can be powerful and how to keep them going.
 ---
 
 

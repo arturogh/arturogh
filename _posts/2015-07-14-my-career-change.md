@@ -3,7 +3,7 @@ layout: post
 title: My coming out...as a designer
 published: true
 image: "career-change.jpg"
-excerpt: How I went from being an industrial engineer in a corporation to a UX Designer.
+excerpt: My personal story of how I became a designer and who really pushed and inspired me forward.
 ---
 
 

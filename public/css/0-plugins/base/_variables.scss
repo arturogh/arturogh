@@ -1,0 +1,42 @@
+// Typography
+$heading-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Merriweather', serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1.2em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+$top-padding-to-menu: 2em;
+
+// Colors
+$blue: #4590E6;
+$light-blue: #5CB8E6;
+$dark-gray: #1A1A1A;
+$medium-gray: #4D4D4D;
+$gray: #8f8f8f;
+$light-gray: #ddd;
+$work-color: #50E3C2;
+$work-light-color: tint($work-color,40%);
+$blog-color: #4590E6;
+$about-color: #E6A1AC;
+
+// Font Colors
+$base-background-color: white;
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

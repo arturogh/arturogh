@@ -1,0 +1,237 @@
+@import '0-plugins/plugins-dir'
+
+//////// 1. Variables ----------------------------------------------------------------------------
+
+body
+	background: #fefefe
+
+// Font Family
+
+* 
+	box-sizing: border-box
+
+//////// Header ----------------------------------------------------------------------------
+
+@media screen and (max-width:1088px)
+	body:not(.content), section
+		padding: 0 0.8em
+		width: 100%
+		box-sizing: border-box
+
+@media screen and (min-width:750px)
+	body.content
+		section, header
+			max-width: 700px
+			margin: 0 auto
+		@media screen and (max-width:1000px)
+			header
+				+display(block)
+			.title
+				+justify-content(center)
+			.filter-menu
+				+justify-content(center)
+
+				+padding(1.4em 0 0)				
+				@media screen and (max-width:1111px)
+					+padding(1em 0 0)
+
+section
+	padding-top: $top-padding-to-menu
+
+
+//////// Header ----------------------------------------------------------------------------
+
+header
+	+outer-container
+	+display(flex)
+	+flex-direction(row)
+	+align-items(baseline)
+	+justify-content(space-between)
+
+	@media screen and (max-width:767px)
+		+display(block)
+
+	.title
+		+display(flex)
+		@media screen and (max-width:767px)
+			+justify-content(center)
+
+		+padding(2em 0 0)
+		@media screen and (max-width:1111px)
+			+padding(1em 0 0)
+		+flex(1)
+
+		h1
+			font-size: 2.2em
+			font-weight: 300
+			margin: 0
+			color: $dark-gray
+
+			a
+				color: inherit
+
+				&:hover
+					color: inherit
+
+			@media screen and (max-width: 768px)
+				font-size: 1.9em
+
+		span
+			color: $blue
+			font-weight: 400
+			font-family: $heading-font-family
+
+//////// Filter ----------------------------------------------------------------------------
+
+ul.filter-menu
+	+display(flex)
+	+flex-direction(row)
+	+align-items(baseline)
+	+justify-content(space-between)
+	@media screen and (max-width:1111px)
+		+justify-content(center)
+	@media screen and (max-width:767px)
+		+justify-content(center)
+	
+	li
+		padding-left: 1.4em
+		font-weight: 300
+
+		font-size: 1.4em
+		@media screen and (max-width:1111px)
+			font-size: 1.2em
+
+		&:first-of-type
+			padding-left: 0
+
+		a
+			color: $gray
+			font-family: $heading-font-family
+			@media screen and (max-width: 768px)
+				font-size: 0.9em
+			
+			&:hover
+				color: $dark-gray
+
+			&.work-menu-link:hover
+				border-bottom: 2px solid $work-color
+			&.blog-menu-link:hover
+				border-bottom: 2px solid $blog-color
+			&.about-menu-link:hover
+				border-bottom: 2px solid $about-color
+
+			&.selected
+				color: $dark-gray
+				font-weight: 400
+				&.work-menu-link
+					border-bottom: 2px solid $work-color
+				&.blog-menu-link
+					border-bottom: 2px solid $blog-color
+				&.about-menu-link
+					border-bottom: 2px solid $about-color
+			
+
+//////// About ----------------------------------------------------------------------------
+
+.about-me
+	+clearfix
+	padding-top: $top-padding-to-menu
+	max-width: 450px
+	text-align: center
+	
+	h2
+		padding: 1em 0 0
+		font-size: 2em
+		font-weight: 700
+
+	img
+		height: 360px
+		width: 500px
+		margin: 0 auto 0.4em
+
+
+	.-bio
+		text-align: left
+		padding-top: 2em
+
+	> span:nth-of-type(1n+1)
+		margin-top: 1em
+		+display(block)
+
+	.single-skill
+		+display(flex)
+		+align-content(stretch)
+		+align-items(flex-start)
+		+span-columns(6)
+				
+
+//////// Single ----------------------------------------------------------------------------
+
+section
+	color: $medium-gray
+
+
+	h2
+		font-size: 3.4em
+		font-weight: 300
+		padding: 0.2em 0
+		@media screen and (max-width:767px)
+			font-size: 2em
+			font-weight: 400
+			padding: 0.8em 0 0.2em
+
+	p
+		font-size: 1.3em
+		line-height: 1.6
+		font-weight: 300
+		@media screen and (max-width:767px)
+			font-size: 1em
+	img
+		box-shadow: 0 2px 4px darken($base-background-color, 10%)
+		margin: 1.5em 0
+	ul
+		list-style: disc
+		padding-left: 1.2em
+		
+		li
+			padding-bottom: 1.2em
+			font-size: 1.2em
+			@media screen and (max-width:767px)
+				font-size: 1em
+			line-height: 1.8
+
+h2.blog-post-title
+	padding-top: 1em
+	margin: 0
+	font-size: 3em
+	font-weight: 300
+	text-align: center
+
+//////// Work feed ----------------------------------------------------------------------------
+
+.work-posts-feed
+	+outer-container
+	height: 100%
+	margin-top: 2em
+	.work-post
+		margin-top: 4em
+		width: 100%
+		height: 100%
+		+display(flex)
+		+span-columns(12)
+		
+		&:first-of-type
+			margin-top: 0
+
+		.work-post-image
+			+span-columns(4)
+			height: 100%
+			min-height: 280px
+			border-radius: 1%
+		.work-post-text
+			+span-columns(8)
+
+			h2
+				padding: 0 0 0.4em
+				margin: 0
+				font-size: 2em

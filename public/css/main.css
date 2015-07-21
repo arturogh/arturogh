@@ -984,8 +984,8 @@ section {
         font-weight: 400;
         padding: 0.8em 0 0.2em; } }
   section p {
-    font-size: 1.3em;
-    line-height: 1.6;
+    font-size: 1.2em;
+    line-height: 1.8;
     font-weight: 300; }
     @media screen and (max-width: 767px) {
       section p {
@@ -1007,8 +1007,8 @@ section {
 h2.blog-post-title {
   padding-top: 1em;
   margin: 0;
-  font-size: 3em;
-  font-weight: 300;
+  font-size: 2.6em;
+  font-weight: 600;
   text-align: center; }
 
 .work-posts-feed {

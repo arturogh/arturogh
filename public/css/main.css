@@ -986,7 +986,11 @@ section {
   section p {
     font-size: 1.2em;
     line-height: 1.8;
-    font-weight: 300; }
+    font-weight: 400; }
+    @media screen and (min-width: 767px) {
+      section p {
+        max-width: 95%;
+        margin: 0 auto; } }
     @media screen and (max-width: 767px) {
       section p {
         font-size: 1em; } }

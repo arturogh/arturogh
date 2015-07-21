@@ -170,7 +170,6 @@ ul.filter-menu
 section
 	color: $medium-gray
 
-
 	h2
 		font-size: 3.4em
 		font-weight: 300
@@ -184,9 +183,8 @@ section
 		font-size: 1.2em
 		line-height: 1.8
 		font-weight: 400
-		@media screen and (min-width:767px)
-			max-width: 95%
-			margin: 0 auto
+		+span-columns(10)
+		+shift(1)
 		@media screen and (max-width:767px)
 			font-size: 1em
 	img

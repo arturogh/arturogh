@@ -986,11 +986,14 @@ section {
   section p {
     font-size: 1.2em;
     line-height: 1.8;
-    font-weight: 400; }
-    @media screen and (min-width: 767px) {
-      section p {
-        max-width: 95%;
-        margin: 0 auto; } }
+    font-weight: 400;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    section p:last-child {
+      margin-right: 0; }
     @media screen and (max-width: 767px) {
       section p {
         font-size: 1em; } }

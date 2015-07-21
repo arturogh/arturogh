@@ -1,5 +1,7 @@
 # My Blog
 
-Where I'll talk about my adventures in UX land and capturing stories through photography.
+Where I'll talk about my adventures in UX land and show my latest work.
 
-This Jekyll blog is based on [Lanyon](https://github.com/poole/lanyon), an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. This in turn is based on [Poole](http://getpoole.com), the Jekyll butler.
+For details, go on to the... website! htp://arturogoicochea.com
+
+This is a Jekyll blog by the way! More on [Jekyll](http://jekyllrb.com).

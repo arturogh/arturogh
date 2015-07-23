@@ -584,7 +584,7 @@ picture {
         background: #f7f7f7; }
 
 .footer {
-  background: #355f90;
+  background: #4d4d4d;
   padding: 3.84em 1.618em;
   margin-top: 4em;
   width: 100%; }
@@ -827,7 +827,7 @@ header {
         header .title h1 {
           font-size: 1.9em; } }
     header .title span {
-      color: #4590E6;
+      color: #8f8f8f;
       font-weight: 400;
       font-family: "Open Sans", sans-serif; }
 
@@ -1012,11 +1012,17 @@ h2.blog-post-title {
   text-align: center;
   color: #8f8f8f; }
 
+body.posts-page.work {
+  background: #e5fbf6; }
+body.posts-page.blog {
+  background: #deebfb; }
+body.posts-page.about {
+  background: white; }
+
 .work-posts-feed {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em; }
+  margin-right: auto; }
   .work-posts-feed::after {
     clear: both;
     content: "";
@@ -1062,7 +1068,7 @@ h2.blog-post-title {
       width: 45%;
       margin-top: 2em;
       border-radius: 6px;
-      border: solid 1px #f1f1f1;
+      background: white;
       margin-top: 2em; }
       .work-posts-feed .work-posts-box .work-post::after {
         clear: both;
@@ -1074,11 +1080,10 @@ h2.blog-post-title {
       .work-posts-feed .work-posts-box .work-post .work-post-text {
         padding: 1em; }
         .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
-          padding: 0 0 1em;
+          padding: 0 0 0.4em;
           margin: 0;
           font-size: 1.8em;
-          font-weight: 600;
-          text-align: center; }
+          font-weight: 600; }
           .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
         .work-posts-feed .work-posts-box .work-post .work-post-text span {
@@ -1086,14 +1091,14 @@ h2.blog-post-title {
           display: block;
           padding-bottom: 0.2em;
           font-weight: 400;
-          font-size: 1.2em;
+          font-size: 1em;
           font-family: "Open Sans", sans-serif;
-          color: #20c7a1; }
+          color: #1cb18f; }
           .work-posts-feed .work-posts-box .work-post .work-post-text span:last-of-type {
             padding-bottom: 1em; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
           font-weight: 400;
-          padding-bottom: 0.6em; }
+          padding: 0 0 0.6em; }
 
 /*# sourceMappingURL=main.css.map */

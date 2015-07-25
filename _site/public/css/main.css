@@ -930,29 +930,38 @@ ul.filter-menu {
           border-bottom: 2px solid #E6A1AC; }
 
 .about-me {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2em;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%;
   text-align: center; }
   .about-me::after {
     clear: both;
     content: "";
     display: table; }
-  .about-me:last-child {
-    margin-right: 0; }
   .about-me h2 {
     padding: 1em 0 0;
     font-size: 2em;
-    font-weight: 700; }
+    font-weight: 700;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .about-me h2:last-child {
+      margin-right: 0; }
   .about-me img {
     height: 360px;
     width: 500px;
     margin: 0 auto 0.4em; }
   .about-me .-bio {
     text-align: left;
-    padding-top: 2em; }
+    padding-top: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .about-me .-bio:last-child {
+      margin-right: 0; }
   .about-me > span:nth-of-type(1n+1) {
     margin-top: 1em;
     display: block; }

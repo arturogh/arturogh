@@ -142,15 +142,15 @@ ul.filter-menu
 //////// About ----------------------------------------------------------------------------
 
 .about-me
-	+clearfix
+	+outer-container
 	padding-top: $top-padding-to-menu
-	+span-columns(9)
 	text-align: center
 	
 	h2
 		padding: 1em 0 0
 		font-size: 2em
 		font-weight: 700
+		+span-columns(9)
 
 	img
 		height: 360px
@@ -161,6 +161,8 @@ ul.filter-menu
 	.-bio
 		text-align: left
 		padding-top: 2em
+		+span-columns(9)
+
 
 	> span:nth-of-type(1n+1)
 		margin-top: 1em

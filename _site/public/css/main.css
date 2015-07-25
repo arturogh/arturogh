@@ -951,6 +951,9 @@ ul.filter-menu {
   .about-me .-bio {
     text-align: left;
     padding-top: 2em; }
+    @media screen and (max-width: 767px) {
+      .about-me .-bio {
+        padding: 0 1em; } }
   .about-me > span:nth-of-type(1n+1) {
     margin-top: 1em;
     display: block; }

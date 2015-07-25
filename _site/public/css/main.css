@@ -944,6 +944,15 @@ ul.filter-menu {
     font-size: 2em;
     font-weight: 700;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      .about-me h2 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        .about-me h2:last-child {
+          margin-right: 0; } }
   .about-me img {
     height: 360px;
     width: 500px;

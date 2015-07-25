@@ -1098,6 +1098,8 @@ h2.blog-post-title {
               font-size: 1.5em; } }
           .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
+            .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
+              color: #7cead1; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
           font-weight: 300;

@@ -931,12 +931,17 @@ ul.filter-menu {
 
 .about-me {
   padding-top: 2em;
-  max-width: 450px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
   text-align: center; }
   .about-me::after {
     clear: both;
     content: "";
     display: table; }
+  .about-me:last-child {
+    margin-right: 0; }
   .about-me h2 {
     padding: 1em 0 0;
     font-size: 2em;

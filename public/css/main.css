@@ -946,7 +946,8 @@ ul.filter-menu {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
+    width: 82.94039%;
+    text-align: center; }
     .about-me h2:last-child {
       margin-right: 0; }
   .about-me img {
@@ -959,7 +960,8 @@ ul.filter-menu {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
+    width: 65.88078%;
+    margin-left: 17.05961%; }
     .about-me .-bio:last-child {
       margin-right: 0; }
   .about-me > span:nth-of-type(1n+1) {

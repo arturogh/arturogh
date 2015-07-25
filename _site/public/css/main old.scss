@@ -1,0 +1,344 @@
+// 1. Variables: color and font sizes and family
+// 2. Containers
+// 3. Title and Menu
+// 4. Work
+// 5. Articles
+// 6. Singles
+// 7. Work Singles
+// 8. Article single
+// 9. About
+
+//////// 1. Variables ----------------------------------------------------------------------------
+
+//Color
+
+$main-color: #4590E6;
+$main-color-hover: #5CB8E6;
+$black: #1A1A1A;
+$dark-grey: #4D4D4D;
+$grey: #8f8f8f;
+$light-grey: #BABABA;
+
+// Font Family
+
+* {
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+
+
+//////// 2. Containers ----------------------------------------------------------------------------
+
+// For Mobile
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+		margin: 0 auto;
+		z-index: 10;
+		position: relative;
+}
+
+// For Tablet
+
+@media screen and (min-width:768px) {
+	.container {
+		max-width: 680px;
+	}
+
+}
+
+// For desktop
+
+@media screen and (min-width:992px) {
+}
+
+// For HD Desktop
+
+@media screen and (min-width:1200px) {
+
+}
+
+//////// 3. Title and Menu ----------------------------------------------------------------------------
+
+header {
+}
+
+// For Mobile
+
+h1 {
+	color: $dark-grey;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+header {
+	span  {
+		color: $light-grey;
+		font-size: 18px;
+		font-weight: 200;
+	}
+}
+
+ul.menu {
+		list-style: none;
+
+		li {
+			color: $grey;
+			font-weight: 300;
+			font-size: 16px;
+
+			a:hover {
+				color: $main-color-hover;
+			}
+
+			a.selected {
+				color: $main-color;
+			}
+		}
+}
+
+
+@media screen and (max-width: 400px) {
+	h1 {
+		display: block;
+	}
+}
+
+// For Tablet
+
+@media screen and (min-width:768px) {
+	h1 {
+	line-height: 1.2;
+	display: block;
+	}
+
+	header {
+	text-align: left;
+	}
+
+	header span {
+		display: block;
+		padding-top: 10px;
+	}
+
+
+	ul.menu {
+		padding: 0;
+		margin: 0;
+		display: block;
+		width: 10%;
+
+		li {
+			padding: 0 0 24px;
+			font-weight: 200;
+
+				a {
+					&.selected {
+					}
+					&:hover {
+					}
+				}
+
+			}
+		}
+}
+
+
+// For desktop
+
+@media screen and (min-width:992px) {
+	h1 {
+		width: 10%;
+	}
+}
+
+// For HD Desktop
+
+@media screen and (min-width:1200px) {
+	
+}
+
+//////// 3. Work ----------------------------------------------------------------------------
+
+// For Mobile
+
+.work-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	margin: 0 0 80px;
+
+	a {
+	display:block;
+	position: relative;
+	width:inherit;
+
+	&:hover {
+		.bar {
+		background: $main-color-hover;
+		}
+		.work-title {
+			color: $main-color-hover;
+		}
+	}
+
+	}
+}
+
+	.bar {
+		background: $main-color;
+		width:10px;
+		height: 22px;
+		position: absolute;
+		top: 0;
+	}
+
+.work {
+	position: relative;
+	width: 100%;
+	max-width: 450px;
+	position: relative;
+	margin: 40px auto 0;
+}
+
+.latest.work {
+	margin: 0 auto;
+}
+
+.work:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.work-title {
+	height: 100px;
+	width: 100%;
+	box-sizing: border-box;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.4;
+	color: $main-color;
+	background: rgba(0,0,0,0.6);
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+	.work-title {
+		font-size: 20px;
+	}
+}
+
+
+// For Tablet
+
+@media screen and (min-width:768px) {
+	.work-content, .content {
+		width: 500px;
+		max-width: 100%;
+	}
+}
+
+// For desktop
+
+@media screen and (min-width:992px) {
+	.work-content, .content {
+		width:800px;
+		justify-content: flex-start;
+
+		a:nth-of-type(2n+1) {
+			margin-left: 40px;
+		}
+
+		a:first-of-type {
+			margin: 0;
+			width: 600px;
+		}
+	
+	}
+
+	.work, a:nth-of-type(1n+2){
+		width: 280px;
+		margin: 40px 0 0;
+	}
+
+	.latest.work {
+		width: 600px;
+		max-width: 100%;
+
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 77%;
+
+		}
+	}
+
+}
+
+// For HD Desktop
+
+@media screen and (min-width:1200px) {
+	
+}
+
+//////// 4. Singles ----------------------------------------------------------------------------
+
+.content {
+	h2 {
+		margin: 0;
+		padding:0;
+		font-size: 40px;
+		font-weight: 400;
+		color: $main-color;
+		line-height: 1.4;
+	}
+	p {
+		font-size: 30px;
+		font-weight: 200;
+		color: white;
+		line-height: 1.25;
+	}
+	
+}
+
+
+//////// 5. Work singles ----------------------------------------------------------------------------
+
+.heroe-image {
+	width: 100%;
+	height: 60%;
+}
+
+@media screen and (min-width:768px) {
+	.content-continues-here {
+		margin-left: 20%;
+	}
+}
+
+.image {
+	height: auto;
+}
+
+.full-container-width {
+	width:100%;
+}
+
+.full-page-width {
+	width:100%;	
+}

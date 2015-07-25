@@ -3,21 +3,22 @@ layout: default
 title: Blog
 ---
 
-<div class="flex-boxes-posts">
+  <section class="content blog-posts">
 
-  {% for post in paginator.posts %}
+    {% for post in paginator.posts %}
 
-    <a href="{{ site.baseurl }}/{{ post.url }}" class="flex-box work">
+    <div class="blog-post">
       <div class="post-text">
-        <h2 class="flex-title">{{ post.title }}</h2>
+        <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt }}</p>     
       </div>
       <div class="image" style="background:url({{site.baseurl}}/public/images/{{post.image}}); background-size: cover; background-position: center center;"></div>
-    </a>
-
+    </div>
+   
     {% endfor %}
 
-  </div>
+  </section>
+
 
 <div class="pagination">
   {% if paginator.next_page %}

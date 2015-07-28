@@ -677,7 +677,7 @@ picture {
 .hero {
   margin-top: 2em;
   height: 320px;
-  border-bottom: 4px solid #4590E6;
+  border-bottom: 4px solid #2196F3;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -694,11 +694,11 @@ picture {
   box-sizing: border-box; }
 
 body.posts-page.work {
-  background: #bef5e8; }
+  background: #B2DFDB; }
 body.posts-page.blog {
-  background: #deebfb; }
+  background: #BBDEFB; }
 body.posts-page.about {
-  background: #fbf2f3; }
+  background: #FCE4EC; }
 
 @media screen and (max-width: 1088px) {
   header, section {
@@ -914,20 +914,20 @@ ul.filter-menu {
       ul.filter-menu li a:hover {
         color: #1A1A1A; }
       ul.filter-menu li a.work-menu-link:hover {
-        border-bottom: 2px solid #50E3C2; }
+        border-bottom: 2px solid #009688; }
       ul.filter-menu li a.blog-menu-link:hover {
-        border-bottom: 2px solid #4590E6; }
+        border-bottom: 2px solid #2196F3; }
       ul.filter-menu li a.about-menu-link:hover {
-        border-bottom: 2px solid #E6A1AC; }
+        border-bottom: 2px solid #E91E63; }
       ul.filter-menu li a.selected {
         color: #1A1A1A;
         font-weight: 400; }
         ul.filter-menu li a.selected.work-menu-link {
-          border-bottom: 2px solid #50E3C2; }
+          border-bottom: 2px solid #009688; }
         ul.filter-menu li a.selected.blog-menu-link {
-          border-bottom: 2px solid #4590E6; }
+          border-bottom: 2px solid #2196F3; }
         ul.filter-menu li a.selected.about-menu-link {
-          border-bottom: 2px solid #E6A1AC; }
+          border-bottom: 2px solid #E91E63; }
 
 .about-me {
   max-width: 68em;
@@ -1086,8 +1086,7 @@ h2.blog-post-title {
       width: 45%;
       margin-top: 2em;
       border-radius: 6px;
-      background: white;
-      margin-top: 2em; }
+      background: white; }
       .work-posts-feed .work-posts-box .work-post::after {
         clear: both;
         content: "";
@@ -1096,6 +1095,8 @@ h2.blog-post-title {
         .work-posts-feed .work-posts-box .work-post {
           display: block;
           width: 80%; } }
+      .work-posts-feed .work-posts-box .work-post:nth-of-type(2n+1) {
+        margin-top: 2em; }
       .work-posts-feed .work-posts-box .work-post .work-post-image {
         border-radius: 0 0 6px 6px;
         height: 300px; }
@@ -1107,14 +1108,14 @@ h2.blog-post-title {
           font-size: 1.8em;
           font-weight: 600;
           text-align: center;
-          color: #1cb18f; }
+          color: #00302c; }
           @media screen and (max-width: 1087px) {
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
               font-size: 1.5em; } }
           .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
-              color: #66e7ca; }
+              color: #00b09f; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
           font-weight: 300;
@@ -1214,7 +1215,7 @@ section.blog-posts {
         section.blog-posts .blog-post .post-text h2 a {
           color: inherit; }
           section.blog-posts .blog-post .post-text h2 a:hover {
-            color: #72abec; }
+            color: #51adf6; }
       section.blog-posts .blog-post .post-text p {
         color: #8f8f8f;
         padding: 0 0 0.6em;

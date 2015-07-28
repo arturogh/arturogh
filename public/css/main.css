@@ -677,7 +677,7 @@ picture {
 .hero {
   margin-top: 2em;
   height: 320px;
-  border-bottom: 4px solid #2196F3;
+  border-bottom: 4px solid #03A9F4;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -696,7 +696,7 @@ picture {
 body.posts-page.work {
   background: #E0F2F1; }
 body.posts-page.blog {
-  background: #E3F2FD; }
+  background: #E1F5FE; }
 body.posts-page.about {
   background: #FCE4EC; }
 
@@ -916,7 +916,7 @@ ul.filter-menu {
       ul.filter-menu li a.work-menu-link:hover {
         border-bottom: 2px solid #00BFA5; }
       ul.filter-menu li a.blog-menu-link:hover {
-        border-bottom: 2px solid #2196F3; }
+        border-bottom: 2px solid #03A9F4; }
       ul.filter-menu li a.about-menu-link:hover {
         border-bottom: 2px solid #E91E63; }
       ul.filter-menu li a.selected {
@@ -925,7 +925,7 @@ ul.filter-menu {
         ul.filter-menu li a.selected.work-menu-link {
           border-bottom: 2px solid #00BFA5; }
         ul.filter-menu li a.selected.blog-menu-link {
-          border-bottom: 2px solid #2196F3; }
+          border-bottom: 2px solid #03A9F4; }
         ul.filter-menu li a.selected.about-menu-link {
           border-bottom: 2px solid #E91E63; }
 
@@ -1215,7 +1215,7 @@ section.blog-posts {
         section.blog-posts .blog-post .post-text h2 a {
           color: inherit; }
           section.blog-posts .blog-post .post-text h2 a:hover {
-            color: #51adf6; }
+            color: #2ebcfc; }
       section.blog-posts .blog-post .post-text p {
         color: #8f8f8f;
         padding: 0 0 0.6em;

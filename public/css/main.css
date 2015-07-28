@@ -1085,7 +1085,7 @@ h2.blog-post-title {
       margin-right: auto;
       width: 45%;
       margin-top: 2em;
-      border-radius: 6px;
+      border-radius: 4px;
       background: white; }
       .work-posts-feed .work-posts-box .work-post::after {
         clear: both;
@@ -1098,7 +1098,7 @@ h2.blog-post-title {
       .work-posts-feed .work-posts-box .work-post:nth-of-type(2n+1) {
         margin-top: 2em; }
       .work-posts-feed .work-posts-box .work-post .work-post-image {
-        border-radius: 0 0 6px 6px;
+        border-radius: 0 0 4px 4px;
         height: 300px; }
       .work-posts-feed .work-posts-box .work-post .work-post-text {
         padding: 1em; }
@@ -1177,7 +1177,7 @@ section.blog-posts {
     width: 100%;
     background: #fff;
     margin-bottom: 3em;
-    border-radius: 6px; }
+    border-radius: 4px; }
     section.blog-posts .blog-post:last-child {
       margin-right: 0; }
     @media screen and (max-width: 767px) {
@@ -1209,7 +1209,7 @@ section.blog-posts {
         color: #4D4D4D;
         font-size: 1.4em;
         font-weight: 700;
-        padding: 0.2em 0 0.8em;
+        padding: 0.2em 0 0.6em;
         margin: 0;
         position: relative; }
         section.blog-posts .blog-post .post-text h2 a {
@@ -1228,7 +1228,7 @@ section.blog-posts {
       margin-right: 2.35765%;
       width: 31.76157%;
       height: 200px;
-      border-radius: 0 6px 6px 0; }
+      border-radius: 0 4px 4px 0; }
       section.blog-posts .blog-post .image:last-child {
         margin-right: 0; }
       @media screen and (max-width: 767px) {
@@ -1238,7 +1238,7 @@ section.blog-posts {
           margin-right: 2.35765%;
           width: 100%;
           height: 320px;
-          border-radius: 0 0 6px 6px; }
+          border-radius: 0 0 4px 4px; }
           section.blog-posts .blog-post .image:last-child {
             margin-right: 0; } }
 

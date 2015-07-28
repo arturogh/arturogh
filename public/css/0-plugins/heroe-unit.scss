@@ -6,7 +6,6 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
   margin-top: $top-padding-to-menu;
   
   height: 320px;
@@ -17,7 +16,7 @@
     height: 180px;
   }
   
-  border-bottom: 4px solid $blog-color;
+  border-bottom: 4px solid $work-color;
 
   background-color: #324766;
   background-position: top;

@@ -694,9 +694,9 @@ picture {
   box-sizing: border-box; }
 
 body.posts-page.work {
-  background: #B2DFDB; }
+  background: #E0F2F1; }
 body.posts-page.blog {
-  background: #BBDEFB; }
+  background: #E3F2FD; }
 body.posts-page.about {
   background: #FCE4EC; }
 
@@ -914,7 +914,7 @@ ul.filter-menu {
       ul.filter-menu li a:hover {
         color: #1A1A1A; }
       ul.filter-menu li a.work-menu-link:hover {
-        border-bottom: 2px solid #009688; }
+        border-bottom: 2px solid #00BFA5; }
       ul.filter-menu li a.blog-menu-link:hover {
         border-bottom: 2px solid #2196F3; }
       ul.filter-menu li a.about-menu-link:hover {
@@ -923,7 +923,7 @@ ul.filter-menu {
         color: #1A1A1A;
         font-weight: 400; }
         ul.filter-menu li a.selected.work-menu-link {
-          border-bottom: 2px solid #009688; }
+          border-bottom: 2px solid #00BFA5; }
         ul.filter-menu li a.selected.blog-menu-link {
           border-bottom: 2px solid #2196F3; }
         ul.filter-menu li a.selected.about-menu-link {
@@ -1108,14 +1108,14 @@ h2.blog-post-title {
           font-size: 1.8em;
           font-weight: 600;
           text-align: center;
-          color: #00302c; }
+          color: #00594d; }
           @media screen and (max-width: 1087px) {
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
               font-size: 1.5em; } }
           .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
-              color: #00b09f; }
+              color: #00d9bb; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
           font-weight: 300;

@@ -300,7 +300,6 @@ body {
 
 h1,
 h2,
-section h3,
 h3,
 h4,
 h5,
@@ -514,12 +513,12 @@ picture {
           padding-bottom: 3em; }
           .flex-boxes-posts .flex-box .post-text:last-child {
             margin-right: 0; } }
-      .flex-boxes-posts .flex-box .post-text h2, .flex-boxes-posts .flex-box .post-text section h3, section .flex-boxes-posts .flex-box .post-text h3 {
+      .flex-boxes-posts .flex-box .post-text h2 {
         font-size: 1.6em;
         font-weight: 700;
         margin: 0; }
         @media screen and (max-width: 767px) {
-          .flex-boxes-posts .flex-box .post-text h2, .flex-boxes-posts .flex-box .post-text section h3, section .flex-boxes-posts .flex-box .post-text h3 {
+          .flex-boxes-posts .flex-box .post-text h2 {
             font-size: 2em;
             font-weight: 400; } }
     .flex-boxes-posts .flex-box .flex-title {
@@ -940,20 +939,20 @@ ul.filter-menu {
     clear: both;
     content: "";
     display: table; }
-  .about-me h2, .about-me section h3, section .about-me h3 {
+  .about-me h2 {
     padding: 1em 0 0;
     font-size: 2em;
     font-weight: 700;
     text-align: center;
     color: #4D4D4D; }
     @media screen and (max-width: 767px) {
-      .about-me h2, .about-me section h3, section .about-me h3 {
+      .about-me h2 {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 82.94039%;
         margin-left: 8.5298%; }
-        .about-me h2:last-child, .about-me section h3:last-child, section .about-me h3:last-child {
+        .about-me h2:last-child {
           margin-right: 0; } }
   .about-me img {
     height: 360px;
@@ -998,17 +997,18 @@ ul.filter-menu {
 
 section {
   color: #4D4D4D; }
-  section h2, section h3 {
+  section h2 {
     font-size: 3.4em;
     font-weight: 400;
     padding: 0.2em 0; }
     @media screen and (max-width: 767px) {
-      section h2, section h3 {
+      section h2 {
         font-size: 2em;
-        font-weight: 400;
         padding: 0.8em 0 0.2em; } }
   section h3 {
-    font-size: 2em; }
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0.4em 0 0.2em; }
   section p {
     font-size: 1.2em;
     line-height: 1.8;
@@ -1030,7 +1030,7 @@ section {
         section ul li {
           font-size: 1em; } }
 
-h2.blog-post-title, section h3.blog-post-title {
+h2.blog-post-title {
   padding-top: 1em;
   margin: 0;
   font-size: 2.6em;
@@ -1106,7 +1106,7 @@ h2.blog-post-title, section h3.blog-post-title {
         height: 300px; }
       .work-posts-feed .work-posts-box .work-post .work-post-text {
         padding: 1em; }
-        .work-posts-feed .work-posts-box .work-post .work-post-text h2, .work-posts-feed .work-posts-box .work-post .work-post-text section h3, section .work-posts-feed .work-posts-box .work-post .work-post-text h3 {
+        .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
           padding: 0.2em 0 0.8em;
           margin: 0;
           font-size: 1.8em;
@@ -1114,11 +1114,11 @@ h2.blog-post-title, section h3.blog-post-title {
           text-align: center;
           color: #00594d; }
           @media screen and (max-width: 1087px) {
-            .work-posts-feed .work-posts-box .work-post .work-post-text h2, .work-posts-feed .work-posts-box .work-post .work-post-text section h3, section .work-posts-feed .work-posts-box .work-post .work-post-text h3 {
+            .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
               font-size: 1.5em; } }
-          .work-posts-feed .work-posts-box .work-post .work-post-text h2 a, .work-posts-feed .work-posts-box .work-post .work-post-text section h3 a, section .work-posts-feed .work-posts-box .work-post .work-post-text h3 a {
+          .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
-            .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover, .work-posts-feed .work-posts-box .work-post .work-post-text section h3 a:hover, section .work-posts-feed .work-posts-box .work-post .work-post-text h3 a:hover {
+            .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
               color: #00d9bb; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
@@ -1209,16 +1209,16 @@ section.blog-posts {
           width: 100%; }
           section.blog-posts .blog-post .post-text:last-child {
             margin-right: 0; } }
-      section.blog-posts .blog-post .post-text h2, section.blog-posts .blog-post .post-text h3 {
+      section.blog-posts .blog-post .post-text h2 {
         color: #4D4D4D;
         font-size: 1.4em;
         font-weight: 600;
         padding: 0.2em 0 0.6em;
         margin: 0;
         position: relative; }
-        section.blog-posts .blog-post .post-text h2 a, section.blog-posts .blog-post .post-text h3 a {
+        section.blog-posts .blog-post .post-text h2 a {
           color: inherit; }
-          section.blog-posts .blog-post .post-text h2 a:hover, section.blog-posts .blog-post .post-text h3 a:hover {
+          section.blog-posts .blog-post .post-text h2 a:hover {
             color: #2ebcfc; }
       section.blog-posts .blog-post .post-text p {
         color: #8f8f8f;

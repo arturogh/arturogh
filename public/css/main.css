@@ -943,7 +943,8 @@ ul.filter-menu {
     padding: 1em 0 0;
     font-size: 2em;
     font-weight: 700;
-    text-align: center; }
+    text-align: center;
+    color: #4D4D4D; }
     @media screen and (max-width: 767px) {
       .about-me h2 {
         float: left;
@@ -1208,7 +1209,7 @@ section.blog-posts {
       section.blog-posts .blog-post .post-text h2 {
         color: #4D4D4D;
         font-size: 1.4em;
-        font-weight: 700;
+        font-weight: 600;
         padding: 0.2em 0 0.6em;
         margin: 0;
         position: relative; }

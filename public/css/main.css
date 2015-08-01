@@ -1219,18 +1219,19 @@ section.blog-posts {
           section.blog-posts .blog-post .post-text:last-child {
             margin-right: 0; } }
       section.blog-posts .blog-post .post-text h2 {
-        color: #424242;
+        color: #212121;
         font-size: 1.4em;
         font-weight: 600;
         padding: 0.2em 0 0.6em;
         margin: 0;
-        position: relative; }
+        position: relative;
+        text-align: left; }
         section.blog-posts .blog-post .post-text h2 a {
           color: inherit; }
           section.blog-posts .blog-post .post-text h2 a:hover {
             color: #2ebcfc; }
       section.blog-posts .blog-post .post-text p {
-        color: #BDBEC2;
+        color: #424242;
         padding: 0 0 0.6em;
         margin: 0;
         line-height: 1.6em;

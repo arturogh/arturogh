@@ -1121,14 +1121,14 @@ h2.blog-post-title {
           font-size: 1.8em;
           font-weight: 600;
           text-align: center;
-          color: #008c79; }
+          color: #212121; }
           @media screen and (max-width: 1087px) {
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
               font-size: 1.5em; } }
           .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
             color: inherit; }
             .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
-              color: #00d9bb; }
+              color: #00BFA5; }
         .work-posts-feed .work-posts-box .work-post .work-post-text p {
           font-size: 1em;
           font-weight: 300;

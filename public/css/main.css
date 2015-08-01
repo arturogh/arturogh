@@ -1241,8 +1241,7 @@ section.blog-posts {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      height: 200px;
-      border-radius: 0 4px 4px 0; }
+      height: 200px; }
       section.blog-posts .blog-post .image:last-child {
         margin-right: 0; }
       @media screen and (max-width: 767px) {

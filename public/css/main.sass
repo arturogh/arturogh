@@ -2,16 +2,16 @@
 
 //////// 1. Global ----------------------------------------------------------------------------
 
-* 
+*
 	box-sizing: border-box
 
-body.posts-page
-	&.work
-		background: $work-background-color
-	&.blog
-		background: $blog-background-color
-	&.about
-		background: $about-background-color
+// body.posts-page
+// 	&.work
+// 		background: $work-background-color
+// 	&.blog
+// 		background: $blog-background-color
+// 	&.about
+// 		background: $about-background-color
 
 //////// Header ----------------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ body.posts-page
 			.filter-menu
 				+justify-content(center)
 
-				+padding(1.4em 0 0)				
+				+padding(1.4em 0 0)
 				@media screen and (max-width:1111px)
 					+padding(1em 0 0)
 
@@ -100,7 +100,7 @@ ul.filter-menu
 	@media screen and (max-width:767px)
 		+justify-content(center)
 		padding-top: 0.8em
-	
+
 	li
 		padding-left: 1.4em
 		font-weight: 300
@@ -117,7 +117,7 @@ ul.filter-menu
 			font-family: $heading-font-family
 			@media screen and (max-width: 768px)
 				font-size: 0.9em
-			
+
 			&:hover
 				color: $dark-gray
 
@@ -137,7 +137,7 @@ ul.filter-menu
 					border-bottom: 2px solid $blog-color
 				&.about-menu-link
 					border-bottom: 2px solid $about-color
-			
+
 
 //////// About ----------------------------------------------------------------------------
 
@@ -145,7 +145,7 @@ ul.filter-menu
 	+outer-container
 	padding-top: $top-padding-to-menu
 	text-align: center
-	
+
 	h2
 		padding: 1em 0 0
 		font-size: 2em
@@ -179,7 +179,7 @@ ul.filter-menu
 		+align-content(stretch)
 		+align-items(flex-start)
 		+span-columns(6)
-				
+
 
 //////// Single ----------------------------------------------------------------------------
 
@@ -199,7 +199,7 @@ section
 		font-weight: 400
 		padding: 0.4em 0 0.2em
 		margin: 0
-		
+
 		&.sub-title
 			font-weight: 700
 
@@ -216,7 +216,7 @@ section
 	ul
 		list-style: disc
 		padding-left: 1.2em
-		
+
 		li
 			padding-bottom: 1.2em
 			font-size: 1.2em
@@ -236,15 +236,25 @@ h2.blog-post-title
 
 .work-posts-feed
 	+outer-container
+	margin-top: 2em
+
+	&.projects h2
+		margin: 1em 0 1.2em
+		padding: 0
+		font-weight: 300
+		font-size: 2em
+		color: $medium-gray
+
 	.work-posts-box
 		+display(flex)
 		+flex-wrap(wrap)
 		+justify-content(space-around)
 		+flex-direction(row)
+		background: $work-background-color
 
 		@media screen and (max-width:767px)
 			+display(block)
-	
+
 		.work-post
 			+outer-container
 			width: 45%
@@ -253,12 +263,17 @@ h2.blog-post-title
 				+display(block)
 				width: 80%
 
-			margin-top: 2em
 			border-radius: $border-radius
 			background: white
 
-			&:nth-of-type(2n+1)
+			&:nth-of-type(1n+3)
+				margin-top: 3em
+
+			@media screen and (max-width: 768px)
 				margin-top: 2em
+
+				&:first-of-type
+					margin-top: 0
 
 			.work-post-image
 				border-radius: 0 0 $border-radius $border-radius
@@ -267,7 +282,7 @@ h2.blog-post-title
 				padding: 1em
 
 				h2
-					padding: 0.2em 0 0.8em
+					padding: 0.2em 0 0.6em
 					margin: 0
 					font-size: 1.8em
 					font-weight: 600
@@ -287,7 +302,7 @@ h2.blog-post-title
 				p
 					font-size: 1em
 					font-weight: 300
-					padding: 0 0 1.6em
+					padding: 0 0 1.8em
 					margin: 0 auto
 					width: 92%
 					text-align: left
@@ -327,7 +342,7 @@ section.blog-posts
 
 	.blog-post
 		+span-columns(12)
-		background: #fff
+		background: $blog-background-color
 		margin-bottom: 3em
 		border-radius: $border-radius
 

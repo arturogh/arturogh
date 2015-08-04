@@ -1049,12 +1049,12 @@ section {
   section h3 {
     font-size: 1.8em;
     font-weight: 700;
-    padding: 0.8em 0 0.4em;
+    padding: 1.2em 0 0.6em;
     margin: 0;
     color: #5C5C5C; }
     section h3.subtitle {
-      margin: 0.96em 0 0.8em;
-      padding: 0.4em 0;
+      margin: 0.96em 0 1.2em;
+      padding: 0.6em 0;
       width: 100%;
       border-bottom: solid 1px #00BFA5;
       font-size: 2.4em;
@@ -1065,12 +1065,12 @@ section {
     font-weight: 400;
     margin: 0;
     color: rgba(0, 0, 0, 0.75);
-    padding-bottom: 0.8em; }
+    padding-bottom: 1.2em; }
     @media screen and (max-width: 767px) {
       section p, section ul li {
         font-size: 1.2em; } }
     section p.intro, section ul li.intro {
-      padding: 0 0 0.8em;
+      padding: 0 0 1.2em;
       margin: 0;
       font-weight: 300;
       font-family: "Open Sans", sans-serif;
@@ -1083,10 +1083,10 @@ section {
     margin-bottom: 2.4em; }
   section ul {
     list-style: disc;
-    padding-top: 0.8em;
-    padding-left: 0.8em; }
+    padding-top: 1.2em;
+    padding-left: 1.2em; }
     section ul li {
-      padding-left: 0.8em; }
+      padding-left: 1.2em; }
       @media screen and (max-width: 767px) {
         section ul li {
           font-size: 1em;

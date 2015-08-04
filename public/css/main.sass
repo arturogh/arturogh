@@ -17,7 +17,7 @@
 
 @media screen and (max-width:1088px)
 	header, section
-		padding: 0 0.8em
+		padding: 0 1em
 		width: 100%
 		box-sizing: border-box
 
@@ -40,6 +40,7 @@
 
 section
 	padding-top: $top-padding-to-menu
+	font-weight: $content-text-weight
 
 	@media screen and (max-width:767px)
 		padding-top: $top-padding-to-menu/2
@@ -55,8 +56,12 @@ header
 	+align-items(baseline)
 	+justify-content(space-between)
 
+	@media screen and (max-width:1111px)
+		padding-top: 0.6em
+
 	@media screen and (max-width:767px)
 		+display(block)
+		padding-top: 0.4em
 
 	.title
 		+display(flex)
@@ -70,7 +75,7 @@ header
 
 		h1
 			font-size: 2.2em
-			font-weight: 300
+			font-weight: 400
 			margin: 0
 			color: $dark-gray
 
@@ -99,15 +104,13 @@ ul.filter-menu
 		+justify-content(center)
 	@media screen and (max-width:767px)
 		+justify-content(center)
-		padding-top: 0.8em
+		padding-top: 1em
 
 	li
-		padding-left: 1.4em
+		padding-left: 1.6em
 		font-weight: 300
 
-		font-size: 1.4em
-		@media screen and (max-width:1111px)
-			font-size: 1.2em
+		font-size: 1.1em
 
 		&:first-of-type
 			padding-left: 0
@@ -119,7 +122,7 @@ ul.filter-menu
 				font-size: 0.9em
 
 			&:hover
-				color: $dark-gray
+				color: $medium-gray
 
 			&.work-menu-link:hover
 				border-bottom: 2px solid $work-color
@@ -129,7 +132,7 @@ ul.filter-menu
 				border-bottom: 2px solid $about-color
 
 			&.selected
-				color: $dark-gray
+				color: $medium-gray
 				font-weight: 400
 				&.work-menu-link
 					border-bottom: 2px solid $work-color
@@ -186,43 +189,100 @@ ul.filter-menu
 section
 	color: $medium-gray
 
+	aside
+		+display(flex)
+		+justify-content(center)
+		padding-bottom: $single-big-bottom-padding
+
+		@media screen and (max-width: 767px)
+			+display(block)
+
+		div
+			font-size: 1em
+			padding: 0 0.8em 0
+
+			@media screen and (max-width: 767px)
+				text-align: center
+
+			> h3
+				font-weight: 400
+				color: $dark-gray
+				display: inline-block
+				padding-right: 0.2em
+				font-size: inherit
+				margin: 0
+
+				@media screen and (max-width: 767px)
+					padding-right: 0
+
+			> p
+				font-weight: 300
+				color: $medium-gray
+				display: inline-block
+				font-family: $heading-font-family
+				font-size: inherit
+				margin: 0
+
 	h2
-		font-size: 3.4em
-		font-weight: 400
-		padding: 0.2em 0
+		font-size: 3.2em
+		font-weight: 600
+		padding: 0.4em 0 0.6em
 		text-align: center
+		margin: 0
 		@media screen and (max-width:767px)
 			font-size: 2.2em
-			padding: 0.8em 0 0.2em
-	h3
-		font-size: 2em
-		font-weight: 400
-		padding: 0.4em 0 0.2em
-		margin: 0
+			padding: 0.8em 0 0.4em
 
-		&.sub-title
-			font-weight: 700
+
+	h3
+		font-size: 1.8em
+		font-weight: 700
+		padding: $single-bottom-padding 0 $single-bottom-padding/2
+		margin: 0
+		color: $medium-gray
+
+		&.subtitle
+			margin: $single-bottom-padding*1.2 0 $single-bottom-padding
+			padding: $single-bottom-padding / 2 0
+			width: 100%
+			border-bottom: solid 1px $work-color
+			font-size: 2.4em
+			font-weight: 400
 
 	p
-		font-size: 1.2em
-		line-height: 1.8
+		font-size: 1.25em
+		line-height: 2
 		font-weight: 400
+		margin: 0
+		color: $content-text-color
+		padding-bottom: $single-bottom-padding
 		@media screen and (max-width:767px)
 			font-size: 1.2em
+
+		&.intro
+			padding: 0 0 $single-bottom-padding
+			margin: 0
+			font-weight: 300
+			font-family: $heading-font-family
+			font-size: 1.45em
+			color: $content-text-color
+			line-height: 1.85
 
 	img
 		box-shadow: 0 2px 4px darken($base-background-color, 10%)
 		margin: 1.5em 0
+		margin-bottom: $single-big-bottom-padding
 	ul
 		list-style: disc
-		padding-left: 1.2em
+		padding-top: $single-bottom-padding
+		padding-left: $single-bottom-padding
 
 		li
-			padding-bottom: 1.2em
-			font-size: 1.2em
+			@extend p
+			padding-left: $single-bottom-padding
 			@media screen and (max-width:767px)
 				font-size: 1em
-			line-height: 1.8
+				line-height: 1.8
 
 h2.blog-post-title
 	padding-top: 1em
@@ -238,12 +298,19 @@ h2.blog-post-title
 	+outer-container
 	margin-top: 2em
 
+	> h2
+		font-size: 2em
+		font-size: 400
+		margin: 0
+		padding: 0 0 1.2em
+		color: $gray
+
 	&.projects h2
 		margin: 1em 0 1.2em
 		padding: 0
 		font-weight: 300
 		font-size: 2em
-		color: $medium-gray
+		color: $gray
 
 	.work-posts-box
 		+display(flex)

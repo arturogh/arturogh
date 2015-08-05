@@ -142,6 +142,11 @@ ul.filter-menu
 					border-bottom: 2px solid $about-color
 
 
+//////// Home ----------------------------------------------------------------------------
+
+.home
+	
+
 //////// About ----------------------------------------------------------------------------
 
 .about-me
@@ -242,8 +247,8 @@ section
 		color: $medium-gray
 
 		&.subtitle
-			margin: $single-bottom-padding*0.8 0 $single-bottom-padding
-			padding: $single-bottom-padding / 2 0
+			margin: $single-bottom-padding*0.8 0 $single-bottom-padding*0.6
+			padding: $single-bottom-padding*0.2 0
 			width: 100%
 			border-bottom: solid 1px $work-color
 			font-size: 2.4em
@@ -296,68 +301,60 @@ h2.blog-post-title
 
 .work-posts-feed
 	+outer-container
-	margin-top: 2em
+	margin: 2em auto 0
+	width: 90%
+
+	@media screen and (max-width: 1087px)
+		width: 100%
+
 
 	> h2
 		font-size: 2em
-		font-size: 400
-		margin: 0
-		padding: 0 0 1.2em
-		color: $gray
-
-	&.projects h2
-		margin: 1em 0 1.2em
-		padding: 0
 		font-weight: 300
-		font-size: 2em
-		color: $gray
-
-	.work-posts-box
-		+display(flex)
-		+flex-wrap(wrap)
-		+justify-content(space-around)
-		+flex-direction(row)
+		margin: 0
+		padding: 0
+		color: $medium-gray
 
 		@media screen and (max-width:767px)
-			+display(block)
+			padding: $single-bottom-padding 0 0
 
+
+	.work-posts-box
 		.work-post
-			+outer-container
-			width: 45%
 			border: 1px solid $work-border-color
-
-			@media screen and (max-width:767px)
-				+display(block)
-				width: 80%
-
+			+outer-container
+			height: 360px
 			border-radius: $border-radius
 			background: white
+			margin-top: $single-big-bottom-padding
 
-			&:nth-of-type(1n+3)
-				margin-top: 3em
-
-			@media screen and (max-width: 768px)
-				margin-top: 2em
-
-				&:first-of-type
-					margin-top: 0
+			&:first-of-type
+				margin-top: $single-bottom-padding
 
 			.work-post-image
-				border-radius: 0 0 $border-radius $border-radius
-				height: 300px
+				border-radius: 0 $border-radius $border-radius 0
+				+span-columns(6)
+				height: 100%
+
+				@media screen and (max-width:767px)
+					+span-columns(4)
+
 			.work-post-text
-				padding: 1em
+				padding: 1.8em
+				+span-columns(6)
+
+				@media screen and (max-width:767px)
+					+span-columns(8)
+					padding: 1em 0.4em
+
 
 				h2
-					padding: 0.2em 0 0.6em
-					margin: 0
-					font-size: 1.8em
-					font-weight: 600
-					text-align: center
-					color: $dark-gray
-
-					@media screen and (max-width:1087px)
-						font-size: 1.5em
+					padding: 0 0 $single-bottom-padding*0.4
+					margin: 0 auto
+					font-size: 1.5em
+					font-weight: 700
+					color: $medium-gray
+					text-align: left
 
 					a
 						color: inherit
@@ -367,18 +364,15 @@ h2.blog-post-title
 
 
 				p
-					font-size: 1em
+					font-size: 1.2em
 					font-weight: 300
-					padding: 0 0 1.8em
+					padding: 0 0 $single-big-bottom-padding*1.2
 					margin: 0 auto
-					width: 92%
-					text-align: left
-					color: $medium-gray
+					color: $gray
+					line-height: 1.6
 
 					@media screen and (max-width:1087px)
-						width: 96%
-						text-align: center
-						font-size: 0.9em
+						font-size: 1.2em
 
 					@media screen and (max-width:767px)
 						font-size: 1em
@@ -386,21 +380,81 @@ h2.blog-post-title
 
 
 				.details
-					+display(flex)
-					+justify-content(center)
 
 					span
 						color: $gray
-						display: inline-block
-						font-weight: 400
-						font-size: 0.9em
+						display: block
+						font-weight: 300
+						font-size: 1.1em
 						font-family: $heading-font-family
 						color: $gray
-						padding: 0 0.8em 1.6em 0
-						text-align: center
 
-						&:last-of-type
-							padding: 0 0 1.6em 0.8em
+						&:first-of-type
+							padding-bottom: $single-bottom-padding/2
+
+						@media screen and (max-width:1087px)
+							max-width: 100%
+
+	&.projects
+
+		h2
+			margin: $single-big-bottom-padding 0 0
+			padding: 0
+			font-weight: 300
+			font-size: 2em
+
+		> span
+			text-align: center
+			display: block
+			width: 100%
+			padding: 0.6em
+			color: $gray
+			font-family: $heading-font-family
+			padding-bottom: $single-big-bottom-padding
+
+		.personal-projects-feed
+			+outer-container
+
+			.personal-project-item
+				+span-columns(5)
+				border: 1px solid $gray
+				border-radius: $border-radius
+				padding: 0.8em
+				margin-bottom: $single-big-bottom-padding
+
+				&:nth-of-type(2n+1)
+					+shift(1)
+
+				&:nth-of-type(2n+2)
+					+omega()
+
+				.project-type, .date
+					font-family: $heading-font-family
+					color: $gray
+
+				h2
+					padding: 0 0 $single-bottom-padding/2
+					margin: 0
+					text-align: left
+					font-size: 1.4em
+					font-weight: 600
+
+					a
+						color: inherit
+
+						&:hover
+							color: $work-color
+
+				p
+					font-size: 1em
+					color: $gray
+					padding-bottom: $single-big-bottom-padding
+
+				.date
+					display: block
+					width: 100%
+					text-align: right
+
 
 //////// Blog feed ----------------------------------------------------------------------------
 

@@ -1053,8 +1053,8 @@ section {
     margin: 0;
     color: #5C5C5C; }
     section h3.subtitle {
-      margin: 0.96em 0 1.2em;
-      padding: 0.6em 0;
+      margin: 0.96em 0 0.72em;
+      padding: 0.24em 0;
       width: 100%;
       border-bottom: solid 1px #00BFA5;
       font-size: 2.4em;
@@ -1104,147 +1104,167 @@ h2.blog-post-title {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em; }
+  margin: 2em auto 0;
+  width: 90%; }
   .work-posts-feed::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 1087px) {
+    .work-posts-feed {
+      width: 100%; } }
   .work-posts-feed > h2 {
     font-size: 2em;
-    font-size: 400;
+    font-weight: 300;
     margin: 0;
-    padding: 0 0 1.2em;
-    color: #A8A8A8; }
+    padding: 0;
+    color: #5C5C5C; }
+    @media screen and (max-width: 767px) {
+      .work-posts-feed > h2 {
+        padding: 1.2em 0 0; } }
+  .work-posts-feed .work-posts-box .work-post {
+    border: 1px solid #B2DFDB;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    border-radius: 4px;
+    background: white;
+    margin-top: 2.4em; }
+    .work-posts-feed .work-posts-box .work-post::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .work-posts-feed .work-posts-box .work-post:first-of-type {
+      margin-top: 1.2em; }
+    .work-posts-feed .work-posts-box .work-post .work-post-image {
+      border-radius: 0 4px 4px 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      height: 100%; }
+      .work-posts-feed .work-posts-box .work-post .work-post-image:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 767px) {
+        .work-posts-feed .work-posts-box .work-post .work-post-image {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .work-posts-feed .work-posts-box .work-post .work-post-image:last-child {
+            margin-right: 0; } }
+    .work-posts-feed .work-posts-box .work-post .work-post-text {
+      padding: 1.8em;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .work-posts-feed .work-posts-box .work-post .work-post-text:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 767px) {
+        .work-posts-feed .work-posts-box .work-post .work-post-text {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          padding: 1em 0.4em; }
+          .work-posts-feed .work-posts-box .work-post .work-post-text:last-child {
+            margin-right: 0; } }
+      .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
+        padding: 0 0 0.48em;
+        margin: 0 auto;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #5C5C5C;
+        text-align: left; }
+        .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
+          color: inherit; }
+          .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
+            color: #00BFA5; }
+      .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 0 0 2.88em;
+        margin: 0 auto;
+        color: #A8A8A8;
+        line-height: 1.6; }
+        @media screen and (max-width: 1087px) {
+          .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
+            font-size: 1.2em; } }
+        @media screen and (max-width: 767px) {
+          .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
+            font-size: 1em;
+            color: #A8A8A8; } }
+      .work-posts-feed .work-posts-box .work-post .work-post-text .details span {
+        color: #A8A8A8;
+        display: block;
+        font-weight: 300;
+        font-size: 1.1em;
+        font-family: "Open Sans", sans-serif;
+        color: #A8A8A8; }
+        .work-posts-feed .work-posts-box .work-post .work-post-text .details span:first-of-type {
+          padding-bottom: 0.6em; }
+        @media screen and (max-width: 1087px) {
+          .work-posts-feed .work-posts-box .work-post .work-post-text .details span {
+            max-width: 100%; } }
   .work-posts-feed.projects h2 {
-    margin: 1em 0 1.2em;
+    margin: 2.4em 0 0;
     padding: 0;
     font-weight: 300;
-    font-size: 2em;
-    color: #A8A8A8; }
-  .work-posts-feed .work-posts-box {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: distribute;
-    -moz-box-pack: distribute;
-    box-pack: distribute;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    -o-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-pack: distribute;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    box-direction: normal;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-direction: row; }
-    @media screen and (max-width: 767px) {
-      .work-posts-feed .work-posts-box {
-        display: block; } }
-    .work-posts-feed .work-posts-box .work-post {
-      max-width: 68em;
-      margin-left: auto;
-      margin-right: auto;
-      width: 45%;
-      border: 1px solid #B2DFDB;
+    font-size: 2em; }
+  .work-posts-feed.projects > span {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.6em;
+    color: #A8A8A8;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 2.4em; }
+  .work-posts-feed.projects .personal-projects-feed {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .work-posts-feed.projects .personal-projects-feed::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .work-posts-feed.projects .personal-projects-feed .personal-project-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      border: 1px solid #A8A8A8;
       border-radius: 4px;
-      background: white; }
-      .work-posts-feed .work-posts-box .work-post::after {
-        clear: both;
-        content: "";
-        display: table; }
-      @media screen and (max-width: 767px) {
-        .work-posts-feed .work-posts-box .work-post {
-          display: block;
-          width: 80%; } }
-      .work-posts-feed .work-posts-box .work-post:nth-of-type(1n+3) {
-        margin-top: 3em; }
-      @media screen and (max-width: 768px) {
-        .work-posts-feed .work-posts-box .work-post {
-          margin-top: 2em; }
-          .work-posts-feed .work-posts-box .work-post:first-of-type {
-            margin-top: 0; } }
-      .work-posts-feed .work-posts-box .work-post .work-post-image {
-        border-radius: 0 0 4px 4px;
-        height: 300px; }
-      .work-posts-feed .work-posts-box .work-post .work-post-text {
-        padding: 1em; }
-        .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
-          padding: 0.2em 0 0.6em;
-          margin: 0;
-          font-size: 1.8em;
-          font-weight: 600;
-          text-align: center;
-          color: #424242; }
-          @media screen and (max-width: 1087px) {
-            .work-posts-feed .work-posts-box .work-post .work-post-text h2 {
-              font-size: 1.5em; } }
-          .work-posts-feed .work-posts-box .work-post .work-post-text h2 a {
-            color: inherit; }
-            .work-posts-feed .work-posts-box .work-post .work-post-text h2 a:hover {
-              color: #00BFA5; }
-        .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
-          font-size: 1em;
-          font-weight: 300;
-          padding: 0 0 1.8em;
-          margin: 0 auto;
-          width: 92%;
-          text-align: left;
-          color: #5C5C5C; }
-          @media screen and (max-width: 1087px) {
-            .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
-              width: 96%;
-              text-align: center;
-              font-size: 0.9em; } }
-          @media screen and (max-width: 767px) {
-            .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
-              font-size: 1em;
-              color: #A8A8A8; } }
-        .work-posts-feed .work-posts-box .work-post .work-post-text .details {
-          display: -webkit-box;
-          display: -moz-box;
-          display: box;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -moz-box-pack: center;
-          box-pack: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          -ms-justify-content: center;
-          -o-justify-content: center;
-          justify-content: center;
-          -ms-flex-pack: center; }
-          .work-posts-feed .work-posts-box .work-post .work-post-text .details span {
-            color: #A8A8A8;
-            display: inline-block;
-            font-weight: 400;
-            font-size: 0.9em;
-            font-family: "Open Sans", sans-serif;
-            color: #A8A8A8;
-            padding: 0 0.8em 1.6em 0;
-            text-align: center; }
-            .work-posts-feed .work-posts-box .work-post .work-post-text .details span:last-of-type {
-              padding: 0 0 1.6em 0.8em; }
+      padding: 0.8em;
+      margin-bottom: 2.4em; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item:last-child {
+        margin-right: 0; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item:nth-of-type(2n+1) {
+        margin-left: 8.5298%; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item:nth-of-type(2n+2) {
+        margin-right: 0; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item .project-type, .work-posts-feed.projects .personal-projects-feed .personal-project-item .date {
+        font-family: "Open Sans", sans-serif;
+        color: #A8A8A8; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item h2 {
+        padding: 0 0 0.6em;
+        margin: 0;
+        text-align: left;
+        font-size: 1.4em;
+        font-weight: 600; }
+        .work-posts-feed.projects .personal-projects-feed .personal-project-item h2 a {
+          color: inherit; }
+          .work-posts-feed.projects .personal-projects-feed .personal-project-item h2 a:hover {
+            color: #00BFA5; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item p, .work-posts-feed.projects .personal-projects-feed .personal-project-item section ul li, section ul .work-posts-feed.projects .personal-projects-feed .personal-project-item li {
+        font-size: 1em;
+        color: #A8A8A8;
+        padding-bottom: 2.4em; }
+      .work-posts-feed.projects .personal-projects-feed .personal-project-item .date {
+        display: block;
+        width: 100%;
+        text-align: right; }
 
 section.blog-posts {
   max-width: 68em;

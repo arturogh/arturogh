@@ -1246,7 +1246,8 @@ h2.blog-post-title {
         margin-right: 0; }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item .project-type, .work-posts-feed.projects .personal-projects-feed .personal-project-item .date {
         font-family: "Open Sans", sans-serif;
-        color: #A8A8A8; }
+        color: #A8A8A8;
+        font-size: 0.8em; }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item h2 {
         padding: 0 0 0.6em;
         margin: 0;
@@ -1310,7 +1311,7 @@ section.blog-posts {
           section.blog-posts .blog-post .post-text:last-child {
             margin-right: 0; } }
       section.blog-posts .blog-post .post-text h2 {
-        color: #424242;
+        color: #5C5C5C;
         font-size: 1.5em;
         font-weight: 600;
         padding: 0.2em 0 0.8em;

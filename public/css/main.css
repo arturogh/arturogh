@@ -1452,8 +1452,7 @@ section.blog-posts {
     margin-right: 2.35765%;
     width: 100%;
     margin-bottom: 3em;
-    border-radius: 4px;
-    border: 1px solid #BBDEFB; }
+    border-radius: 4px; }
     section.blog-posts .blog-post:last-child {
       margin-right: 0; }
     @media screen and (max-width: 767px) {
@@ -1466,7 +1465,6 @@ section.blog-posts {
         section.blog-posts .blog-post:last-child {
           margin-right: 0; } }
     section.blog-posts .blog-post .post-text {
-      padding: 1em;
       float: left;
       display: block;
       margin-right: 2.35765%;

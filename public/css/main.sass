@@ -5,13 +5,8 @@
 *
 	box-sizing: border-box
 
-// body.posts-page
-// 	&.work
-// 		background: $work-background-color
-// 	&.blog
-// 		background: $blog-background-color
-// 	&.about
-// 		background: $about-background-color
+body.home
+	position: relative
 
 //////// Header ----------------------------------------------------------------------------
 
@@ -144,9 +139,141 @@ ul.filter-menu
 
 //////// Home ----------------------------------------------------------------------------
 
-.home
+section.home-container
+	+outer-container
+	margin-top: $single-big-bottom-padding
+
+	.home-section
+		height: 320px
+		position: relative
+		margin-bottom: $single-big-bottom-padding*2
+		padding: 0
+		+outer-container
+
+		@media screen and (max-width: 767px)
+			min-height: 500px
+			margin-bottom: 100px
+
+		.text-section
+			+span-columns(4)
+
+			h2
+				padding: 0 0 $single-bottom-padding*0.4
+				margin: 0
+				font-size: 1.65em
+				color: $medium-gray
+				text-align: left
+
+				@media screen and (max-width: 767px)
+					font-size: 1.4em
+					font-weight: 700
+
+				a
+					color: inherit
+					padding: 0 !important
+					margin: 0
+					font-weight: 500
+
+			p
+				font-size: 1.1em
+				color: $gray
+				font-weight: 400
+				padding-bottom: $single-big-bottom-padding
+				@media screen and (max-width: 767px)
+					padding-bottom: $single-bottom-padding
+
+			> a
+				display: block
+				font-family: $heading-font-family
+				font-weight: 400
+				font-size: 1em
+
+				@media screen and (max-width: 767px)
+					font-size: 1.2em
+
+			@media screen and (max-width: 1087px)
+				+span-columns(6)
+
+			@media screen and (max-width: 767px)
+				+span-columns(10)
+				+shift(1)
+				padding-bottom: $single-bottom-padding
+
+		.image-section
+			+span-columns(8)
+			height: 100%
+			border-radius: 0 $border-radius $border-radius 0
+
+			@media screen and (max-width: 1087px)
+				+span-columns(6)
+
+			@media screen and (max-width: 767px)
+				+span-columns(10)
+				+shift(1)
+				height: 60%
+				border-radius: $border-radius
 
 
+		&.home-about
+			.image-section
+				background: url('../images/test3.jpg')
+				background-repeat: no-repeat
+				background-position: top
+				background-size: cover
+
+			a
+				color: $about-color
+
+				&:hover, h2 a:hover
+					color: $about-color
+
+		&.home-work-showcase
+			a
+				color: $work-color
+
+				&:hover
+					color: $work-color
+
+			.image-section
+				background: url('../images/test1.jpg')
+				background-repeat: no-repeat
+				background-position: top
+				background-size: cover
+
+		&.home-blog-showcase
+			border-color: $blog-color
+
+			a
+				color: $blog-color
+
+				&:hover
+					color: $blog-color
+
+			.image-section
+				background: url('../images/test3.jpg')
+				background-repeat: no-repeat
+				background-position: top
+				background-size: cover
+
+	.call-to-action
+		margin: $single-big-bottom-padding auto 0
+		width: 80%
+		text-align: center
+		display: block
+		font-family: $heading-font-family
+		font-size: 0.8em
+		font-weight: 300
+		color: $gray
+
+		button
+			margin-top: $single-bottom-padding
+			width: auto
+			padding: 1em
+			font-size: 1.4em
+			font-weight: 400
+
+			a
+				color: #fff
 //////// About ----------------------------------------------------------------------------
 
 .about-me
@@ -155,7 +282,7 @@ ul.filter-menu
 	text-align: center
 
 	h2
-		padding: 1em 0 0
+		padding: 1em 0 $single-bottom-padding
 		font-size: 2em
 		font-weight: 700
 		text-align: center
@@ -302,18 +429,9 @@ h2.blog-post-title
 .work-posts-feed
 	+outer-container
 	margin: 2em auto 0
-	width: 90%
 
 	@media screen and (max-width: 1087px)
 		width: 100%
-
-
-	> h2
-		font-size: 2em
-		font-weight: 300
-		margin: 0
-		padding: 0
-		color: $medium-gray
 
 		@media screen and (max-width:767px)
 			padding: $single-bottom-padding 0 0
@@ -321,12 +439,14 @@ h2.blog-post-title
 
 	.work-posts-box
 		.work-post
-			border: 1px solid $work-border-color
 			+outer-container
-			height: 360px
+			min-height: 360px
 			border-radius: $border-radius
 			background: white
-			margin-top: $single-big-bottom-padding
+			margin-top: $single-big-bottom-padding*2
+
+			@media screen and (max-width:767px)
+				margin-top: $single-big-bottom-padding*2
 
 			&:first-of-type
 				margin-top: $single-bottom-padding
@@ -334,18 +454,23 @@ h2.blog-post-title
 			.work-post-image
 				border-radius: 0 $border-radius $border-radius 0
 				+span-columns(6)
+				min-height: 360px
 				height: 100%
 
 				@media screen and (max-width:767px)
-					+span-columns(4)
+					+span-columns(10)
+					+shift(1)
+					border-radius: $border-radius
+					margin-top: 1em
 
 			.work-post-text
-				padding: 1.8em
 				+span-columns(6)
 
 				@media screen and (max-width:767px)
-					+span-columns(8)
-					padding: 1em 0.4em
+					+span-columns(10)
+					+shift(1)
+					padding: 1em
+					height: 100%
 
 
 				h2
@@ -353,8 +478,9 @@ h2.blog-post-title
 					margin: 0 auto
 					font-size: 1.5em
 					font-weight: 700
-					color: $medium-gray
+					color: $work-color
 					text-align: left
+
 
 					a
 						color: inherit
@@ -377,6 +503,7 @@ h2.blog-post-title
 					@media screen and (max-width:767px)
 						font-size: 1em
 						color: $gray
+						padding: 0 0 $single-bottom-padding
 
 
 				.details
@@ -422,11 +549,16 @@ h2.blog-post-title
 				padding: 0.8em
 				margin-bottom: $single-big-bottom-padding
 
-				&:nth-of-type(2n+1)
+				@media screen and (max-width:767px)
+					+span-columns(10)
 					+shift(1)
 
-				&:nth-of-type(2n+2)
-					+omega()
+				@media screen and (min-width:768px)
+					&:nth-of-type(2n+1)
+						+shift(1)
+
+					&:nth-of-type(2n+2)
+						+omega()
 
 				.project-type, .date
 					font-family: $heading-font-family
@@ -483,7 +615,7 @@ section.blog-posts
 				color: $medium-gray
 				font-size: 1.5em
 				font-weight: 600
-				padding: 0.2em 0 0.8em
+				padding: 0 0 0.8em
 				margin: 0
 				position: relative
 				text-align: left
@@ -495,7 +627,7 @@ section.blog-posts
 						color: lighten($blog-color, 10%)
 
 			p
-				color: $medium-gray
+				color: $gray
 				padding: 0 0 0.6em
 				margin: 0
 				line-height: 1.6em

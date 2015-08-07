@@ -1158,6 +1158,8 @@ section.home-container {
     width: 48.82117%; }
     .about-me .single-skill:last-child {
       margin-right: 0; }
+  .about-me .long-version {
+    display: none; }
 
 section {
   color: #666666; }

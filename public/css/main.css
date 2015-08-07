@@ -1103,6 +1103,8 @@ section.home-container {
     display: table; }
   .about-me a {
     color: #E91E63 !important; }
+    .about-me a:hover {
+      color: #f27ba3; }
   .about-me h2 {
     padding: 1em 0 1.2em;
     font-size: 2em;

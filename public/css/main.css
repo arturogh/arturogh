@@ -1464,7 +1464,7 @@ section.blog-posts {
     section.blog-posts .blog-post:last-child {
       margin-right: 0; }
     section.blog-posts .blog-post:last-of-type {
-      border: none; }
+      border-bottom-color: #fff; }
     @media screen and (max-width: 767px) {
       section.blog-posts .blog-post {
         float: left;

@@ -1041,10 +1041,14 @@ section.home-container {
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+    section.home-container .home-section.home-about h2 {
+      color: #E91E63; }
     section.home-container .home-section.home-about a {
       color: #E91E63; }
       section.home-container .home-section.home-about a:hover, section.home-container .home-section.home-about a h2 a:hover {
         color: #E91E63; }
+    section.home-container .home-section.home-work-showcase h2 {
+      color: #00BFA5; }
     section.home-container .home-section.home-work-showcase a {
       color: #00BFA5; }
       section.home-container .home-section.home-work-showcase a:hover {
@@ -1057,6 +1061,8 @@ section.home-container {
     section.home-container .home-section.home-blog-showcase {
       border-color: #fff;
       padding-bottom: 0; }
+      section.home-container .home-section.home-blog-showcase h2 {
+        color: #03A9F4; }
       section.home-container .home-section.home-blog-showcase a {
         color: #03A9F4; }
         section.home-container .home-section.home-blog-showcase a:hover {

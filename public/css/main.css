@@ -1104,9 +1104,8 @@ section.home-container {
     color: #E91E63 !important; }
   .about-me h2 {
     padding: 1em 0 1.2em;
-    font-size: 1.4em;
-    font-weight: 700;
-    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
     color: #666666; }
     @media screen and (max-width: 767px) {
       .about-me h2 {

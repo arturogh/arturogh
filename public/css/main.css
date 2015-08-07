@@ -1102,7 +1102,7 @@ section.home-container {
     content: "";
     display: table; }
   .about-me a {
-    color: #E91E63 !important; }
+    color: #E91E63; }
     .about-me a:hover {
       color: #f27ba3; }
   .about-me h2 {

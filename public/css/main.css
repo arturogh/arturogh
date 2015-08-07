@@ -939,9 +939,7 @@ section.home-container {
   section.home-container .home-section {
     height: 420px;
     position: relative;
-    margin-bottom: 100px;
-    border-bottom: 1px solid #CCCCCC;
-    padding: 0 0 60px;
+    margin-bottom: 4.8em;
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
@@ -963,30 +961,32 @@ section.home-container {
       section.home-container .home-section .text-section h2 {
         padding: 0 0 0.48em;
         margin: 0;
-        font-size: 1.65em;
+        font-size: 1.8em;
+        font-weight: 600;
         color: #666666;
         text-align: left; }
         @media screen and (max-width: 767px) {
           section.home-container .home-section .text-section h2 {
-            font-size: 1.4em;
-            font-weight: 700; } }
+            font-size: 1.6em;
+            font-weight: 500; } }
         section.home-container .home-section .text-section h2 a {
           color: inherit;
           padding: 0 !important;
-          margin: 0;
-          font-weight: 500; }
+          margin: 0; }
       section.home-container .home-section .text-section p, section.home-container .home-section .text-section ul li, section.home-container ul .home-section .text-section li {
         font-size: 1.1em;
         color: #A8A8A8;
-        font-weight: 400;
-        padding-bottom: 2.4em; }
+        font-weight: 300;
+        padding-bottom: 1.44em; }
         @media screen and (max-width: 767px) {
           section.home-container .home-section .text-section p, section.home-container .home-section .text-section ul li, section.home-container ul .home-section .text-section li {
             padding-bottom: 1.2em; } }
+        section.home-container .home-section .text-section p strong, section.home-container .home-section .text-section ul li strong, section.home-container ul .home-section .text-section li strong {
+          color: #666666; }
       section.home-container .home-section .text-section > a {
         display: block;
         font-family: "Open Sans", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1em; }
         @media screen and (max-width: 767px) {
           section.home-container .home-section .text-section > a {
@@ -1280,18 +1280,22 @@ h2.blog-post-title {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    min-height: 360px;
+    min-height: 320px;
     background: white;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #CCCCCC; }
+    padding-bottom: 4.8em; }
     .work-posts-feed .work-posts-box .work-post::after {
       clear: both;
       content: "";
       display: table; }
     @media screen and (max-width: 767px) {
       .work-posts-feed .work-posts-box .work-post {
-        margin-top: 4.8em; } }
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        .work-posts-feed .work-posts-box .work-post:last-child {
+          margin-right: 0; } }
     .work-posts-feed .work-posts-box .work-post:first-of-type {
       margin-top: 1.2em; }
     .work-posts-feed .work-posts-box .work-post:last-of-type {
@@ -1311,8 +1315,7 @@ h2.blog-post-title {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 82.94039%;
-          margin-left: 8.5298%;
+          width: 100%;
           border-radius: 4px;
           margin-top: 1em; }
           .work-posts-feed .work-posts-box .work-post .work-post-image:last-child {
@@ -1329,8 +1332,7 @@ h2.blog-post-title {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 82.94039%;
-          margin-left: 8.5298%;
+          width: 100%;
           padding: 1em;
           height: 100%; }
           .work-posts-feed .work-posts-box .work-post .work-post-text:last-child {
@@ -1349,7 +1351,7 @@ h2.blog-post-title {
       .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
         font-size: 1.2em;
         font-weight: 300;
-        padding: 0 0 2.88em;
+        padding: 0 0 1.68em;
         margin: 0 auto;
         color: #A8A8A8;
         line-height: 1.6; }
@@ -1455,9 +1457,7 @@ section.blog-posts {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    margin-bottom: 60px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #CCCCCC; }
+    margin-bottom: 2.4em; }
     section.blog-posts .blog-post:last-child {
       margin-right: 0; }
     section.blog-posts .blog-post:last-of-type {

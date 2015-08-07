@@ -148,7 +148,7 @@ section.home-container
 		position: relative
 		margin-bottom: 100px
 		border-bottom: 1px solid $light-gray
-		padding: 0 0 100px
+		padding: 0 0 60px
 		+outer-container
 
 		@media screen and (max-width: 767px)
@@ -442,10 +442,9 @@ h2.blog-post-title
 		.work-post
 			+outer-container
 			min-height: 360px
-			border-radius: $border-radius
 			background: white
 			margin-bottom: 60px
-			padding-bottom: 60px
+			padding-bottom: 20px
 			border-bottom: 1px solid $light-gray
 
 			@media screen and (max-width:767px)
@@ -455,8 +454,6 @@ h2.blog-post-title
 				margin-top: $single-bottom-padding
 
 			&:last-of-type
-				border: none
-				padding-bottom: 0
 				margin-bottom: 0
 
 			.work-post-image
@@ -605,7 +602,7 @@ section.blog-posts
 	.blog-post
 		+span-columns(12)
 		margin-bottom: $single-big-bottom-padding
-		padding-bottom: $single-big-bottom-padding
+		padding-bottom: $single-bottom-padding
 		border-bottom: 1px solid $light-gray
 
 		&:last-of-type

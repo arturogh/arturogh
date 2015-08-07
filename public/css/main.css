@@ -1045,14 +1045,14 @@ section.home-container {
       color: #E91E63; }
     section.home-container .home-section.home-about a {
       color: #E91E63; }
-      section.home-container .home-section.home-about a:hover, section.home-container .home-section.home-about a h2 a:hover {
-        color: #E91E63; }
+      section.home-container .home-section.home-about a:hover {
+        color: #f27ba3; }
     section.home-container .home-section.home-work-showcase h2 {
       color: #00BFA5; }
     section.home-container .home-section.home-work-showcase a {
       color: #00BFA5; }
       section.home-container .home-section.home-work-showcase a:hover {
-        color: #00BFA5; }
+        color: #00d9bb; }
     section.home-container .home-section.home-work-showcase .image-section {
       background: url("../images/test1.jpg");
       background-repeat: no-repeat;
@@ -1066,7 +1066,7 @@ section.home-container {
       section.home-container .home-section.home-blog-showcase a {
         color: #03A9F4; }
         section.home-container .home-section.home-blog-showcase a:hover {
-          color: #03A9F4; }
+          color: #60ccfd; }
       section.home-container .home-section.home-blog-showcase .image-section {
         background: url("../images/test3.jpg");
         background-repeat: no-repeat;
@@ -1077,15 +1077,16 @@ section.home-container {
     width: 80%;
     text-align: center;
     display: block;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.8em;
-    font-weight: 300;
-    color: #A8A8A8; }
+    font-family: "Open Sans", sans-serif; }
+    section.home-container .call-to-action h3 {
+      font-size: 2.4em;
+      font-weight: 300;
+      color: #A8A8A8; }
     section.home-container .call-to-action button {
       margin-top: 1.2em;
       width: auto;
       padding: 1em;
-      font-size: 1.4em;
+      font-size: 1.8em;
       font-weight: 400; }
       section.home-container .call-to-action button a {
         color: #fff; }
@@ -1121,7 +1122,8 @@ section.home-container {
   .about-me img {
     height: 360px;
     width: 500px;
-    margin: 0 auto 1.2em; }
+    margin: 0 auto 1.2em;
+    border-radius: 4px; }
   .about-me .-bio {
     text-align: left; }
   .about-me > span:nth-of-type(1n+1) {

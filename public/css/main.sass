@@ -227,8 +227,8 @@ section.home-container
 			a
 				color: $about-color
 
-				&:hover, h2 a:hover
-					color: $about-color
+				&:hover
+					color: lighten($about-color,20%)
 
 		&.home-work-showcase
 			h2
@@ -238,7 +238,7 @@ section.home-container
 				color: $work-color
 
 				&:hover
-					color: $work-color
+					color: lighten($work-color,5%)
 
 			.image-section
 				background: url('../images/test1.jpg')
@@ -257,7 +257,7 @@ section.home-container
 				color: $blog-color
 
 				&:hover
-					color: $blog-color
+					color: lighten($blog-color,20%)
 
 			.image-section
 				background: url('../images/test3.jpg')
@@ -271,15 +271,17 @@ section.home-container
 		text-align: center
 		display: block
 		font-family: $heading-font-family
-		font-size: 0.8em
-		font-weight: 300
-		color: $gray
+
+		h3
+			font-size: 2.4em
+			font-weight: 300
+			color: $gray
 
 		button
 			margin-top: $single-bottom-padding
 			width: auto
 			padding: 1em
-			font-size: 1.4em
+			font-size: 1.8em
 			font-weight: 400
 
 			a
@@ -310,6 +312,7 @@ section.home-container
 		height: 360px
 		width: 500px
 		margin: 0 auto $single-bottom-padding
+		border-radius: $border-radius
 
 	.-bio
 		text-align: left

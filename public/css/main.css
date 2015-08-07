@@ -1100,6 +1100,8 @@ section.home-container {
     clear: both;
     content: "";
     display: table; }
+  .about-me a {
+    color: #E91E63 !important; }
   .about-me h2 {
     padding: 1em 0 1.2em;
     font-size: 2em;

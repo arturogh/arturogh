@@ -1121,13 +1121,9 @@ section.home-container {
   .about-me img {
     height: 360px;
     width: 500px;
-    margin: 0 auto 0.4em; }
+    margin: 0 auto 1.2em; }
   .about-me .-bio {
-    text-align: left;
-    padding-top: 2em; }
-    @media screen and (max-width: 767px) {
-      .about-me .-bio {
-        padding: 2m 1em 0; } }
+    text-align: left; }
   .about-me > span:nth-of-type(1n+1) {
     margin-top: 1em;
     display: block; }

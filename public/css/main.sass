@@ -144,10 +144,11 @@ section.home-container
 	margin-top: $single-big-bottom-padding
 
 	.home-section
-		height: 320px
+		height: 320px + 100px
 		position: relative
-		margin-bottom: $single-big-bottom-padding*2
-		padding: 0
+		margin-bottom: 100px
+		border-bottom: 1px solid $light-gray
+		padding: 0 0 100px
 		+outer-container
 
 		@media screen and (max-width: 767px)
@@ -240,7 +241,8 @@ section.home-container
 				background-size: cover
 
 		&.home-blog-showcase
-			border-color: $blog-color
+			border-color: #fff
+			padding-bottom: 0
 
 			a
 				color: $blog-color
@@ -442,13 +444,20 @@ h2.blog-post-title
 			min-height: 360px
 			border-radius: $border-radius
 			background: white
-			margin-top: $single-big-bottom-padding*2
+			margin-bottom: 60px
+			padding-bottom: 60px
+			border-bottom: 1px solid $light-gray
 
 			@media screen and (max-width:767px)
 				margin-top: $single-big-bottom-padding*2
 
 			&:first-of-type
 				margin-top: $single-bottom-padding
+
+			&:last-of-type
+				border: none
+				padding-bottom: 0
+				margin-bottom: 0
 
 			.work-post-image
 				border-radius: $border-radius
@@ -596,7 +605,8 @@ section.blog-posts
 	.blog-post
 		+span-columns(12)
 		margin-bottom: $single-big-bottom-padding
-		border-radius: $border-radius
+		padding-bottom: $single-big-bottom-padding
+		border-bottom: 1px solid $gray
 
 		@media screen and (max-width:767px)
 			+span-columns(10)

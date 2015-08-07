@@ -937,10 +937,11 @@ section.home-container {
     content: "";
     display: table; }
   section.home-container .home-section {
-    height: 320px;
+    height: 420px;
     position: relative;
-    margin-bottom: 4.8em;
-    padding: 0;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 0 100px;
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
@@ -1054,7 +1055,8 @@ section.home-container {
       background-position: top;
       background-size: cover; }
     section.home-container .home-section.home-blog-showcase {
-      border-color: #03A9F4; }
+      border-color: #fff;
+      padding-bottom: 0; }
       section.home-container .home-section.home-blog-showcase a {
         color: #03A9F4; }
         section.home-container .home-section.home-blog-showcase a:hover {
@@ -1281,7 +1283,9 @@ h2.blog-post-title {
     min-height: 360px;
     border-radius: 4px;
     background: white;
-    margin-top: 4.8em; }
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #CCCCCC; }
     .work-posts-feed .work-posts-box .work-post::after {
       clear: both;
       content: "";
@@ -1291,6 +1295,10 @@ h2.blog-post-title {
         margin-top: 4.8em; } }
     .work-posts-feed .work-posts-box .work-post:first-of-type {
       margin-top: 1.2em; }
+    .work-posts-feed .work-posts-box .work-post:last-of-type {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
     .work-posts-feed .work-posts-box .work-post .work-post-image {
       border-radius: 4px;
       float: left;
@@ -1451,7 +1459,8 @@ section.blog-posts {
     margin-right: 2.35765%;
     width: 100%;
     margin-bottom: 2.4em;
-    border-radius: 4px; }
+    padding-bottom: 2.4em;
+    border-bottom: 1px solid #A8A8A8; }
     section.blog-posts .blog-post:last-child {
       margin-right: 0; }
     @media screen and (max-width: 767px) {

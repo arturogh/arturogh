@@ -144,14 +144,14 @@ section.home-container
 	margin-top: $single-big-bottom-padding
 
 	.home-section
-		height: 320px + 100px
+		height: 420px
 		position: relative
-		margin-bottom: $single-big-bottom-padding*2
+		margin-bottom: $single-big-bottom-padding*2.4
 		+outer-container
 
 		@media screen and (max-width: 767px)
 			min-height: 500px
-			margin-bottom: 100px
+			margin-bottom: 80px
 
 		.text-section
 			+span-columns(4)
@@ -174,7 +174,7 @@ section.home-container
 					margin: 0
 
 			p
-				font-size: 1.1em
+				font-size: 1em
 				color: $gray
 				font-weight: 300
 				padding-bottom: $single-bottom-padding*1.2
@@ -224,8 +224,29 @@ section.home-container
 			h2
 				color: $about-color
 
+			p
+				// @media screen and (min-width: 768px)
+				// 	margin-bottom: $single-big-bottom-padding
+
+			.flex-container-mobile
+				@media screen and (max-width: 767px)
+					+display(+flex)
+					+align-items(flex-start)
+
+					a:nth-of-type(2)
+						margin-left: 4em
+
 			a
 				color: $about-color
+
+				@media screen and (min-width: 768px)
+					display: block
+
+				&.cta
+					&:first-of-type
+						margin-bottom: $single-bottom-padding
+					&:last-of-type
+						margin-bottom: $single-big-bottom-padding
 
 				&:hover
 					color: lighten($about-color,20%)
@@ -241,7 +262,7 @@ section.home-container
 					color: lighten($work-color,5%)
 
 			.image-section
-				background: url('../images/test1.jpg')
+				background: url('../images/work-edited.jpg')
 				background-repeat: no-repeat
 				background-position: top
 				background-size: cover
@@ -265,27 +286,113 @@ section.home-container
 				background-position: top
 				background-size: cover
 
+	.home-testimonial
+		+outer-container
+		margin-bottom: $single-big-bottom-padding*3
+		margin-top: $single-big-bottom-padding
+
+		@media screen and (max-width: 767px)
+			margin-bottom: $single-big-bottom-padding*2
+
+		.testimonial
+			+span-columns(4)
+			height: 100%
+
+			@media screen and (max-width: 767px)
+				+span-columns(12)
+				padding: $single-bottom-padding
+
+			.testimonial-text
+				+span-columns(8)
+				margin-bottom: $single-bottom-padding
+
+				@media screen and (max-width: 767px)
+					+span-columns(10)
+					padding-right: 0.6em
+
+				h3, p
+					padding: 0
+					margin: 0
+
+				h3
+					color: $gray
+					font-size: 1em
+					font-weight: 300
+
+					span
+						@media screen and (min-width: 768px)
+							display: block
+
+						&:last-of-type
+							font-weight: 400
+
+				p
+					color: $medium-gray
+					text-align: left
+					font-size: 1.2em
+					font-weight: 300
+					line-height: 1.5
+					font-family: $heading-font-family
+					padding-bottom: 0.6em
+
+					@media screen and (max-width: 767px)
+						font-weight: 400
+
+			.testimonial-photo-container
+				+span-columns(4)
+				background-size: cover
+				position: relative
+				height: 60px
+
+				@media screen and (max-width: 767px)
+					+span-columns(2)
+
+				.testimonial-photo
+					border-radius: $border-radius
+					background: url('../images/me.jpg')
+					background-size: cover
+					width: 60px
+					margin: 0 auto
+					height: 60px
+					position: absolute
+					right: 0.6em
+
 	.call-to-action
-		margin: $single-big-bottom-padding auto 0
-		width: 80%
-		text-align: center
-		display: block
+		margin: 0 0 $single-big-bottom-padding*2
+		+display(flex)
+		+justify-content(center)
+		+align-items(center)
 		font-family: $heading-font-family
 
+		@media screen and (max-width: 767px)
+			+display(block)
+			+span-columns(10)
+			+shift(1)
+			text-align: center
+
 		h3
-			font-size: 2.4em
-			font-weight: 300
-			color: $gray
-
-		button
-			margin-top: $single-bottom-padding
-			width: auto
-			padding: 1em
+			padding: 0 0.6em 0 0
 			font-size: 1.8em
-			font-weight: 400
+			font-weight: 300
+			color: $medium-gray
 
-			a
-				color: #fff
+			@media screen and (max-width: 767px)
+				padding: 0 0 0.8em
+				font-size: 1.6em
+
+		a
+			font-size: 1.6em
+			font-weight: 400
+			text-align: center
+			padding-left: 0.6em
+			color: $about-color
+
+			@media screen and (max-width: 767px)
+				padding: 0
+
+			&:hover
+				color: lighten($about-color,20%)
+
 //////// About ----------------------------------------------------------------------------
 
 .about-me

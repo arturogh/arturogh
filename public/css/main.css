@@ -1407,15 +1407,6 @@ h2.blog-post-title {
       clear: both;
       content: "";
       display: table; }
-    @media screen and (max-width: 767px) {
-      .work-posts-feed .work-posts-box .work-post {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
-        .work-posts-feed .work-posts-box .work-post:last-child {
-          margin-right: 0; } }
     .work-posts-feed .work-posts-box .work-post:first-of-type {
       margin-top: 1.2em; }
     .work-posts-feed .work-posts-box .work-post:last-of-type {

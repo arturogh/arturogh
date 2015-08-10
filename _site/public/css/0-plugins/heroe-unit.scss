@@ -1,23 +1,28 @@
-.hero {  
+.hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
+  $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
   margin-top: $top-padding-to-menu;
-  
-  height: 320px;
+
+  height: 380px;
   @media screen and (max-width:1111px) {
-    height: 240px;
+    height: 280px;
   }
   @media screen and (max-width:767px) {
-    height: 180px;
+    height: 200px;
   }
-  
-  border-bottom: 4px solid $blog-color;
+
+  &.blog {
+    border-bottom: 4px solid $blog-color;
+  }
+
+  &.work {
+    border-bottom: 4px solid $work-color;
+  }
 
   background-color: #324766;
   background-position: top;

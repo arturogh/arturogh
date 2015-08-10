@@ -680,7 +680,6 @@ picture {
 .hero {
   margin-top: 2em;
   height: 380px;
-  border-bottom: 4px solid #00BFA5;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -692,6 +691,10 @@ picture {
   @media screen and (max-width: 767px) {
     .hero {
       height: 200px; } }
+  .hero.blog {
+    border-bottom: 4px solid #03A9F4; }
+  .hero.work {
+    border-bottom: 4px solid #00BFA5; }
 
 * {
   box-sizing: border-box; }

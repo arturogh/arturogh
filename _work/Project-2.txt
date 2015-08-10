@@ -1,5 +1,0 @@
----
-title: REI Explorer
----
-
-Mention that for inviting members, in the future a mode should be aded to decide whether users can just join in or fi you have to aprove them.

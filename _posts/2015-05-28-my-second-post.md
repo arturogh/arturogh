@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: blog-single
 title: Defend your hobby
 published: true
 image: "post-1-img.jpg"
+banner: "long-img-1.jpg"
+group: 'post'
 excerpt: A post about why hobbies can be powerful and how to keep them going.
 ---
 

@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: blog-single
 title: My coming out...as a designer
 published: true
 image: "career-change.jpg"
+banner: "long-img-1.jpg"
+group: 'post'
 excerpt: My personal story of how I became a designer and who really pushed and inspired me forward.
 ---
 

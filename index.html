@@ -10,11 +10,11 @@ title: Blog
     <div class="blog-post">
       <div class="post-text">
         <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>     
+        <p>{{ post.excerpt }}</p>
       </div>
       <div class="image" style="background:url({{site.baseurl}}/public/images/{{post.image}}); background-size: cover; background-position: center center;"></div>
     </div>
-   
+
     {% endfor %}
 
   </section>
@@ -36,4 +36,3 @@ title: Blog
     <span class="pagination-item newer"></span>
   {% endif %}
 </div>
-

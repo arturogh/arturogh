@@ -16,7 +16,13 @@
     height: 200px;
   }
 
-  border-bottom: 4px solid $work-color;
+  &.blog {
+    border-bottom: 4px solid $blog-color;
+  }
+
+  &.work {
+    border-bottom: 4px solid $work-color;
+  }
 
   background-color: #324766;
   background-position: top;

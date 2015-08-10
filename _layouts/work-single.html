@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+<body class="content single blog">
+
+  {% include blog-menu.html %}
+
+  <div class="hero blog" style="background:url(/public/images/{{ page.banner }}); background-size: cover;">
+  </div>
+
+  <section class="content">
+
+    <h2 class="">{{ page.title }}</h2>
+
+    <aside>
+      <div>
+        <h3>Role</h3>
+        <p>{{ page.role }}</p>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <p>{{ page.tools }}</p>
+      </div>
+    </aside>
+
+        {{ content }}
+
+  </section>
+
+  {% include footer.html %}
+
+  </body>
+</html>

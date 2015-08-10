@@ -222,31 +222,22 @@ section.home-container
 				background-position: top
 				background-size: cover
 			h2
-				color: $about-color
+				color: $medium-gray
 
 			p
 				// @media screen and (min-width: 768px)
 				// 	margin-bottom: $single-big-bottom-padding
 
-			.flex-container-mobile
-				@media screen and (max-width: 767px)
-					+display(+flex)
-					+align-items(flex-start)
+			.flex-container
+				+display(+flex)
+				+align-items(flex-start)
+				+justify-content(flex-start)
 
-					a:nth-of-type(2)
-						margin-left: 4em
+				a:first-of-type
+					margin-right: 2.4em
 
 			a
 				color: $about-color
-
-				@media screen and (min-width: 768px)
-					display: block
-
-				&.cta
-					&:first-of-type
-						margin-bottom: $single-bottom-padding
-					&:last-of-type
-						margin-bottom: $single-big-bottom-padding
 
 				&:hover
 					color: lighten($about-color,20%)
@@ -302,11 +293,19 @@ section.home-container
 				+span-columns(12)
 				padding: $single-bottom-padding
 
-			.testimonial-text
-				+span-columns(8)
+			.testimonial-quote
+				+span-columns(12)
 				margin-bottom: $single-bottom-padding
+				color: $medium-gray
+				text-align: left
+				font-size: 1.2em
+				font-weight: 300
+				line-height: 1.5
+				font-family: $heading-font-family
+				padding-bottom: 0.6em
 
 				@media screen and (max-width: 767px)
+					font-weight: 400
 					+span-columns(10)
 					padding-right: 0.6em
 
@@ -314,29 +313,21 @@ section.home-container
 					padding: 0
 					margin: 0
 
-				h3
-					color: $gray
-					font-size: 1em
-					font-weight: 300
+			.testimonial-name
+				+span-columns(8)
+				color: $gray
+				font-size: 1em
+				font-weight: 300
 
-					span
-						@media screen and (min-width: 768px)
-							display: block
+				span
+					@media screen and (min-width: 768px)
+						display: block
 
-						&:last-of-type
-							font-weight: 400
+					&:last-of-type
+						font-weight: 400
 
 				p
-					color: $medium-gray
-					text-align: left
-					font-size: 1.2em
-					font-weight: 300
-					line-height: 1.5
-					font-family: $heading-font-family
-					padding-bottom: 0.6em
 
-					@media screen and (max-width: 767px)
-						font-weight: 400
 
 			.testimonial-photo-container
 				+span-columns(4)

@@ -1042,30 +1042,31 @@ section.home-container {
       background-position: top;
       background-size: cover; }
     section.home-container .home-section.home-about h2 {
-      color: #E91E63; }
-    @media screen and (max-width: 767px) {
-      section.home-container .home-section.home-about .flex-container-mobile {
-        display: +flex;
-        -webkit-box-align: start;
-        -moz-box-align: start;
-        box-align: start;
-        -webkit-align-items: flex-start;
-        -moz-align-items: flex-start;
-        -ms-align-items: flex-start;
-        -o-align-items: flex-start;
-        align-items: flex-start;
-        -ms-flex-align: start; }
-        section.home-container .home-section.home-about .flex-container-mobile a:nth-of-type(2) {
-          margin-left: 4em; } }
+      color: #666666; }
+    section.home-container .home-section.home-about .flex-container {
+      display: +flex;
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      box-align: start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+      -o-align-items: flex-start;
+      align-items: flex-start;
+      -ms-flex-align: start;
+      -webkit-box-pack: start;
+      -moz-box-pack: start;
+      box-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      -o-justify-content: flex-start;
+      justify-content: flex-start;
+      -ms-flex-pack: start; }
+      section.home-container .home-section.home-about .flex-container a:first-of-type {
+        margin-right: 2.4em; }
     section.home-container .home-section.home-about a {
       color: #E91E63; }
-      @media screen and (min-width: 768px) {
-        section.home-container .home-section.home-about a {
-          display: block; } }
-      section.home-container .home-section.home-about a.cta:first-of-type {
-        margin-bottom: 1.2em; }
-      section.home-container .home-section.home-about a.cta:last-of-type {
-        margin-bottom: 2.4em; }
       section.home-container .home-section.home-about a:hover {
         color: #f27ba3; }
     section.home-container .home-section.home-work-showcase h2 {
@@ -1123,46 +1124,49 @@ section.home-container {
           padding: 1.2em; }
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
-      section.home-container .home-testimonial .testimonial .testimonial-text {
+      section.home-container .home-testimonial .testimonial .testimonial-quote {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 65.88078%;
-        margin-bottom: 1.2em; }
-        section.home-container .home-testimonial .testimonial .testimonial-text:last-child {
+        width: 100%;
+        margin-bottom: 1.2em;
+        color: #666666;
+        text-align: left;
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.5;
+        font-family: "Open Sans", sans-serif;
+        padding-bottom: 0.6em; }
+        section.home-container .home-testimonial .testimonial .testimonial-quote:last-child {
           margin-right: 0; }
         @media screen and (max-width: 767px) {
-          section.home-container .home-testimonial .testimonial .testimonial-text {
+          section.home-container .home-testimonial .testimonial .testimonial-quote {
+            font-weight: 400;
             float: left;
             display: block;
             margin-right: 2.35765%;
             width: 82.94039%;
             padding-right: 0.6em; }
-            section.home-container .home-testimonial .testimonial .testimonial-text:last-child {
+            section.home-container .home-testimonial .testimonial .testimonial-quote:last-child {
               margin-right: 0; } }
-        section.home-container .home-testimonial .testimonial .testimonial-text h3, section.home-container .home-testimonial .testimonial .testimonial-text p, section.home-container .home-testimonial .testimonial .testimonial-text ul li, section.home-container ul .home-testimonial .testimonial .testimonial-text li {
+        section.home-container .home-testimonial .testimonial .testimonial-quote h3, section.home-container .home-testimonial .testimonial .testimonial-quote p, section.home-container .home-testimonial .testimonial .testimonial-quote ul li, section.home-container ul .home-testimonial .testimonial .testimonial-quote li {
           padding: 0;
           margin: 0; }
-        section.home-container .home-testimonial .testimonial .testimonial-text h3 {
-          color: #A8A8A8;
-          font-size: 1em;
-          font-weight: 300; }
-          @media screen and (min-width: 768px) {
-            section.home-container .home-testimonial .testimonial .testimonial-text h3 span {
-              display: block; } }
-          section.home-container .home-testimonial .testimonial .testimonial-text h3 span:last-of-type {
-            font-weight: 400; }
-        section.home-container .home-testimonial .testimonial .testimonial-text p, section.home-container .home-testimonial .testimonial .testimonial-text ul li, section.home-container ul .home-testimonial .testimonial .testimonial-text li {
-          color: #666666;
-          text-align: left;
-          font-size: 1.2em;
-          font-weight: 300;
-          line-height: 1.5;
-          font-family: "Open Sans", sans-serif;
-          padding-bottom: 0.6em; }
-          @media screen and (max-width: 767px) {
-            section.home-container .home-testimonial .testimonial .testimonial-text p, section.home-container .home-testimonial .testimonial .testimonial-text ul li, section.home-container ul .home-testimonial .testimonial .testimonial-text li {
-              font-weight: 400; } }
+      section.home-container .home-testimonial .testimonial .testimonial-name {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        color: #A8A8A8;
+        font-size: 1em;
+        font-weight: 300; }
+        section.home-container .home-testimonial .testimonial .testimonial-name:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 768px) {
+          section.home-container .home-testimonial .testimonial .testimonial-name span {
+            display: block; } }
+        section.home-container .home-testimonial .testimonial .testimonial-name span:last-of-type {
+          font-weight: 400; }
       section.home-container .home-testimonial .testimonial .testimonial-photo-container {
         float: left;
         display: block;

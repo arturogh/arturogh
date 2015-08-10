@@ -188,7 +188,6 @@ section.home-container
 
 				@media screen and (max-width: 767px)
 					padding-bottom: $single-bottom-padding
-					font-size: 0.8em
 
 				strong
 					color: $medium-gray
@@ -227,7 +226,6 @@ section.home-container
 			.home-flex-container
 				+display(flex)
 				+align-items(flex-start)
-				+justify-content(flex-start)
 
 				a:first-of-type
 					margin-right: 2.4em
@@ -283,9 +281,8 @@ section.home-container
 
 		> h3
 			margin-bottom: $single-bottom-padding*0.8
-			text-align: center
-			font-size: 1.8em
-			font-weight: 600
+			font-size: 1.4em
+			font-weight: 500
 			color: $gray
 
 		.testimonial
@@ -296,10 +293,10 @@ section.home-container
 
 			@media screen and (max-width: 767px)
 				+span-columns(12)
-				padding: $single-bottom-padding
+				margin-bottom: $single-big-bottom-padding*1.2
 
 			.testimonial-quote
-				margin-bottom: $single-bottom-padding
+				margin-bottom: $single-bottom-padding*0.6
 				color: $medium-gray
 				font-size: 1.2em
 				font-weight: 300
@@ -309,25 +306,10 @@ section.home-container
 
 				@media screen and (max-width: 767px)
 					font-weight: 400
-					padding-right: 0.6em
-					text-align: center
 
 			.testimonial-flex-container
 				+display(flex)
-				+justify-content(space-around)
 				+align-items(center)
-
-				h3
-					color: $gray
-					font-size: 1em
-					font-weight: 300
-
-					span
-						@media screen and (min-width: 768px)
-							display: block
-
-						&:last-of-type
-							font-weight: 400
 
 				.testimonial-photo
 					border-radius: $border-radius
@@ -336,6 +318,21 @@ section.home-container
 					width: 60px
 					margin: 0
 					height: 60px
+
+				.testimonial-name
+					@media screen and (max-width: 767px)
+						margin-left: 20px
+
+						span
+							color: $gray
+							font-size: 1em
+							font-weight: 300
+							display: block
+							padding: 0
+							margin: 0
+
+							&:last-of-type
+								font-weight: 400
 
 	.call-to-action
 		margin: 0 0 $single-big-bottom-padding*2

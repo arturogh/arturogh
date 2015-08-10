@@ -2,14 +2,10 @@
 layout: blog-single
 title: My coming out...as a designer
 published: true
-image: "career-change.jpg"
-banner: "long-img-1.jpg"
+image: "coming-out-as-a-designer"
 group: 'post'
 excerpt: My personal story of how I became a designer and who really pushed and inspired me forward.
 ---
-
-
-<div><img src="{{site.baseurl}}/public/images/career-change-large.jpg" alt="Living life, walking the streets of Lima"></div>
 
 <p>2007: I wasn’t sure what to study in college for my undergraduate. Computer science had been on my mind, but it didn’t convince me. Since I was a small boy, I had always <em>loved</em> computers. But, for some reason, when I pictured myself working as a CS undergrad, I saw boring jobs sitting behind a computer, in a cubicle, doing monotonous tasks all day. Today I know that that is not the case, but back then my zero knowledge of code, design or jobs in the industry lead to me imagining it that way. I thought, if it’s not working on video games, it will probably be boring. That led me to make a more logical and cold choice: an undergrad that should ensure my “professional success”.</p>
 

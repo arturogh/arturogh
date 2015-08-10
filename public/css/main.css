@@ -585,8 +585,11 @@ picture {
 .footer {
   background: #757575;
   padding: 3.84em 1.618em;
-  margin-top: 4em;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      margin-top: 4em; } }
   .footer .footer-links {
     margin-bottom: 1.92em; }
     .footer .footer-links::after {

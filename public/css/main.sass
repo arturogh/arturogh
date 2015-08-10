@@ -144,9 +144,8 @@ section.home-container
 	margin-top: $single-big-bottom-padding
 
 	.home-section
-		height: 420px
 		position: relative
-		margin-bottom: $single-big-bottom-padding
+		margin-bottom: $single-big-bottom-padding*1.2
 		+outer-container
 
 		.text-section
@@ -199,15 +198,15 @@ section.home-container
 
 		.image-section
 			+span-columns(8)
-			height: 100%
 			border-radius: $border-radius
+			height: 420px
 
 			@media screen and (max-width: 1087px)
 				+span-columns(6)
 
 			@media screen and (max-width: 767px)
+				height: 250px
 				+span-columns(12)
-				height: 60%
 
 
 		&.home-about
@@ -277,22 +276,18 @@ section.home-container
 					height: 60px
 
 				.testimonial-name
-					@media screen and (max-width: 767px)
-						margin-left: 20px
+					margin-left: 20px
 
-						span
-							color: $gray
-							font-size: 1em
-							font-weight: 300
-							display: block
-							padding: 0
-							margin: 0
+					span
+						color: $gray
+						font-size: 1em
+						font-weight: 300
+						display: block
+						padding: 0
+						margin: 0
 
-							&:last-of-type
-								font-weight: 400
-
-							@media screen and (max-width: 767px)
-								font-size: 0.8em
+						&:last-of-type
+							font-weight: 400
 
 	.call-to-action
 		margin: 0 0 $single-big-bottom-padding*2

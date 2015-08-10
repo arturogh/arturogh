@@ -698,7 +698,7 @@ body.home {
 
 @media screen and (max-width: 1088px) {
   header, section {
-    padding: 0 1em;
+    padding: 0 0.4em;
     width: 100%;
     box-sizing: border-box; } }
 @media screen and (min-width: 750px) {
@@ -939,7 +939,7 @@ section.home-container {
   section.home-container .home-section {
     height: 420px;
     position: relative;
-    margin-bottom: 5.76em;
+    margin-bottom: 2.4em;
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
@@ -958,6 +958,23 @@ section.home-container {
       width: 31.76157%; }
       section.home-container .home-section .text-section:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 1087px) {
+        section.home-container .home-section .text-section {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          section.home-container .home-section .text-section:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 767px) {
+        section.home-container .home-section .text-section {
+          padding-bottom: 1.2em;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          section.home-container .home-section .text-section:last-child {
+            margin-right: 0; } }
       section.home-container .home-section .text-section h2 {
         padding: 0 0 0.48em;
         margin: 0;
@@ -980,7 +997,8 @@ section.home-container {
         padding-bottom: 1.44em; }
         @media screen and (max-width: 767px) {
           section.home-container .home-section .text-section p, section.home-container .home-section .text-section ul li, section.home-container ul .home-section .text-section li {
-            padding-bottom: 1.2em; } }
+            padding-bottom: 1.2em;
+            font-size: 0.8em; } }
         section.home-container .home-section .text-section p strong, section.home-container .home-section .text-section ul li strong, section.home-container ul .home-section .text-section li strong {
           color: #666666; }
       section.home-container .home-section .text-section > a {
@@ -991,24 +1009,6 @@ section.home-container {
         @media screen and (max-width: 767px) {
           section.home-container .home-section .text-section > a {
             font-size: 1.2em; } }
-      @media screen and (max-width: 1087px) {
-        section.home-container .home-section .text-section {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 48.82117%; }
-          section.home-container .home-section .text-section:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 767px) {
-        section.home-container .home-section .text-section {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 82.94039%;
-          margin-left: 8.5298%;
-          padding-bottom: 1.2em; }
-          section.home-container .home-section .text-section:last-child {
-            margin-right: 0; } }
     section.home-container .home-section .image-section {
       float: left;
       display: block;
@@ -1031,8 +1031,7 @@ section.home-container {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 82.94039%;
-          margin-left: 8.5298%;
+          width: 100%;
           height: 60%; }
           section.home-container .home-section .image-section:last-child {
             margin-right: 0; } }
@@ -1043,8 +1042,14 @@ section.home-container {
       background-size: cover; }
     section.home-container .home-section.home-about h2 {
       color: #666666; }
-    section.home-container .home-section.home-about .flex-container {
-      display: +flex;
+    section.home-container .home-section.home-about .home-flex-container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-align: start;
       -moz-box-align: start;
       box-align: start;
@@ -1063,7 +1068,7 @@ section.home-container {
       -o-justify-content: flex-start;
       justify-content: flex-start;
       -ms-flex-pack: start; }
-      section.home-container .home-section.home-about .flex-container a:first-of-type {
+      section.home-container .home-section.home-about .home-flex-container a:first-of-type {
         margin-right: 2.4em; }
     section.home-container .home-section.home-about a {
       color: #E91E63; }
@@ -1106,15 +1111,23 @@ section.home-container {
       display: table; }
     @media screen and (max-width: 767px) {
       section.home-container .home-testimonial {
-        margin-bottom: 4.8em; } }
+        margin-bottom: 1.2em; } }
+    section.home-container .home-testimonial > h3 {
+      margin-bottom: 0.96em;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #A8A8A8; }
     section.home-container .home-testimonial .testimonial {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
-      height: 100%; }
+      width: 31.76157%; }
       section.home-container .home-testimonial .testimonial:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 768px) {
+        section.home-container .home-testimonial .testimonial {
+          padding-right: 2em; } }
       @media screen and (max-width: 767px) {
         section.home-container .home-testimonial .testimonial {
           float: left;
@@ -1125,75 +1138,60 @@ section.home-container {
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
       section.home-container .home-testimonial .testimonial .testimonial-quote {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
         margin-bottom: 1.2em;
         color: #666666;
-        text-align: left;
         font-size: 1.2em;
         font-weight: 300;
         line-height: 1.5;
         font-family: "Open Sans", sans-serif;
-        padding-bottom: 0.6em; }
-        section.home-container .home-testimonial .testimonial .testimonial-quote:last-child {
-          margin-right: 0; }
+        padding: 0; }
         @media screen and (max-width: 767px) {
           section.home-container .home-testimonial .testimonial .testimonial-quote {
             font-weight: 400;
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 82.94039%;
-            padding-right: 0.6em; }
-            section.home-container .home-testimonial .testimonial .testimonial-quote:last-child {
-              margin-right: 0; } }
-        section.home-container .home-testimonial .testimonial .testimonial-quote h3, section.home-container .home-testimonial .testimonial .testimonial-quote p, section.home-container .home-testimonial .testimonial .testimonial-quote ul li, section.home-container ul .home-testimonial .testimonial .testimonial-quote li {
-          padding: 0;
-          margin: 0; }
-      section.home-container .home-testimonial .testimonial .testimonial-name {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%;
-        color: #A8A8A8;
-        font-size: 1em;
-        font-weight: 300; }
-        section.home-container .home-testimonial .testimonial .testimonial-name:last-child {
-          margin-right: 0; }
-        @media screen and (min-width: 768px) {
-          section.home-container .home-testimonial .testimonial .testimonial-name span {
-            display: block; } }
-        section.home-container .home-testimonial .testimonial .testimonial-name span:last-of-type {
-          font-weight: 400; }
-      section.home-container .home-testimonial .testimonial .testimonial-photo-container {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        background-size: cover;
-        position: relative;
-        height: 60px; }
-        section.home-container .home-testimonial .testimonial .testimonial-photo-container:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 767px) {
-          section.home-container .home-testimonial .testimonial .testimonial-photo-container {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 14.70196%; }
-            section.home-container .home-testimonial .testimonial .testimonial-photo-container:last-child {
-              margin-right: 0; } }
-        section.home-container .home-testimonial .testimonial .testimonial-photo-container .testimonial-photo {
+            padding-right: 0.6em;
+            text-align: center; } }
+      section.home-container .home-testimonial .testimonial .testimonial-flex-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center; }
+        section.home-container .home-testimonial .testimonial .testimonial-flex-container h3 {
+          color: #A8A8A8;
+          font-size: 1em;
+          font-weight: 300; }
+          @media screen and (min-width: 768px) {
+            section.home-container .home-testimonial .testimonial .testimonial-flex-container h3 span {
+              display: block; } }
+          section.home-container .home-testimonial .testimonial .testimonial-flex-container h3 span:last-of-type {
+            font-weight: 400; }
+        section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-photo {
           border-radius: 4px;
           background: url("../images/me.jpg");
           background-size: cover;
           width: 60px;
-          margin: 0 auto;
-          height: 60px;
-          position: absolute;
-          right: 0.6em; }
+          margin: 0;
+          height: 60px; }
   section.home-container .call-to-action {
     margin: 0 0 4.8em;
     display: -webkit-box;

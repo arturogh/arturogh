@@ -12,7 +12,7 @@ body.home
 
 @media screen and (max-width:1088px)
 	header, section
-		padding: 0 1em
+		padding: 0 0.4em
 		width: 100%
 		box-sizing: border-box
 
@@ -146,7 +146,7 @@ section.home-container
 	.home-section
 		height: 420px
 		position: relative
-		margin-bottom: $single-big-bottom-padding*2.4
+		margin-bottom: $single-big-bottom-padding
 		+outer-container
 
 		@media screen and (max-width: 767px)
@@ -155,6 +155,13 @@ section.home-container
 
 		.text-section
 			+span-columns(4)
+
+			@media screen and (max-width: 1087px)
+				+span-columns(6)
+
+			@media screen and (max-width: 767px)
+				padding-bottom: $single-bottom-padding
+				+span-columns(12)
 
 			h2
 				padding: 0 0 $single-bottom-padding*0.4
@@ -178,8 +185,10 @@ section.home-container
 				color: $gray
 				font-weight: 300
 				padding-bottom: $single-bottom-padding*1.2
+
 				@media screen and (max-width: 767px)
 					padding-bottom: $single-bottom-padding
+					font-size: 0.8em
 
 				strong
 					color: $medium-gray
@@ -193,14 +202,6 @@ section.home-container
 				@media screen and (max-width: 767px)
 					font-size: 1.2em
 
-			@media screen and (max-width: 1087px)
-				+span-columns(6)
-
-			@media screen and (max-width: 767px)
-				+span-columns(10)
-				+shift(1)
-				padding-bottom: $single-bottom-padding
-
 		.image-section
 			+span-columns(8)
 			height: 100%
@@ -210,8 +211,7 @@ section.home-container
 				+span-columns(6)
 
 			@media screen and (max-width: 767px)
-				+span-columns(10)
-				+shift(1)
+				+span-columns(12)
 				height: 60%
 
 
@@ -224,12 +224,8 @@ section.home-container
 			h2
 				color: $medium-gray
 
-			p
-				// @media screen and (min-width: 768px)
-				// 	margin-bottom: $single-big-bottom-padding
-
-			.flex-container
-				+display(+flex)
+			.home-flex-container
+				+display(flex)
 				+align-items(flex-start)
 				+justify-content(flex-start)
 
@@ -283,70 +279,63 @@ section.home-container
 		margin-top: $single-big-bottom-padding
 
 		@media screen and (max-width: 767px)
-			margin-bottom: $single-big-bottom-padding*2
+			margin-bottom: $single-bottom-padding
+
+		> h3
+			margin-bottom: $single-bottom-padding*0.8
+			text-align: center
+			font-size: 1.8em
+			font-weight: 600
+			color: $gray
 
 		.testimonial
 			+span-columns(4)
-			height: 100%
+
+			@media screen and (min-width: 768px)
+				padding-right: 2em
 
 			@media screen and (max-width: 767px)
 				+span-columns(12)
 				padding: $single-bottom-padding
 
 			.testimonial-quote
-				+span-columns(12)
 				margin-bottom: $single-bottom-padding
 				color: $medium-gray
-				text-align: left
 				font-size: 1.2em
 				font-weight: 300
 				line-height: 1.5
 				font-family: $heading-font-family
-				padding-bottom: 0.6em
+				padding: 0
 
 				@media screen and (max-width: 767px)
 					font-weight: 400
-					+span-columns(10)
 					padding-right: 0.6em
+					text-align: center
 
-				h3, p
-					padding: 0
-					margin: 0
+			.testimonial-flex-container
+				+display(flex)
+				+justify-content(space-around)
+				+align-items(center)
 
-			.testimonial-name
-				+span-columns(8)
-				color: $gray
-				font-size: 1em
-				font-weight: 300
+				h3
+					color: $gray
+					font-size: 1em
+					font-weight: 300
 
-				span
-					@media screen and (min-width: 768px)
-						display: block
+					span
+						@media screen and (min-width: 768px)
+							display: block
 
-					&:last-of-type
-						font-weight: 400
-
-				p
-
-
-			.testimonial-photo-container
-				+span-columns(4)
-				background-size: cover
-				position: relative
-				height: 60px
-
-				@media screen and (max-width: 767px)
-					+span-columns(2)
+						&:last-of-type
+							font-weight: 400
 
 				.testimonial-photo
 					border-radius: $border-radius
 					background: url('../images/me.jpg')
 					background-size: cover
 					width: 60px
-					margin: 0 auto
+					margin: 0
 					height: 60px
-					position: absolute
-					right: 0.6em
 
 	.call-to-action
 		margin: 0 0 $single-big-bottom-padding*2

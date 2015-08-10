@@ -1428,7 +1428,7 @@ h2.blog-post-title {
           margin-right: 2.35765%;
           width: 100%;
           border-radius: 4px;
-          margin-top: 1em; }
+          margin: 1em 0.2em 0; }
           .work-posts-feed .work-posts-box .work-post .work-post-image:last-child {
             margin-right: 0; } }
     .work-posts-feed .work-posts-box .work-post .work-post-text {

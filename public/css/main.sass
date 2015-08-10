@@ -149,10 +149,6 @@ section.home-container
 		margin-bottom: $single-big-bottom-padding
 		+outer-container
 
-		@media screen and (max-width: 767px)
-			min-height: 500px
-			margin-bottom: 80px
-
 		.text-section
 			+span-columns(4)
 
@@ -236,41 +232,6 @@ section.home-container
 				&:hover
 					color: lighten($about-color,20%)
 
-		&.home-work-showcase
-			h2
-				color: $work-color
-
-			a
-				color: $work-color
-
-				&:hover
-					color: lighten($work-color,5%)
-
-			.image-section
-				background: url('../images/work-edited.jpg')
-				background-repeat: no-repeat
-				background-position: top
-				background-size: cover
-
-		&.home-blog-showcase
-			border-color: #fff
-			padding-bottom: 0
-
-			h2
-				color: $blog-color
-
-			a
-				color: $blog-color
-
-				&:hover
-					color: lighten($blog-color,20%)
-
-			.image-section
-				background: url('../images/test3.jpg')
-				background-repeat: no-repeat
-				background-position: top
-				background-size: cover
-
 	.home-testimonial
 		+outer-container
 		margin-bottom: $single-big-bottom-padding*3
@@ -280,7 +241,7 @@ section.home-container
 			margin-bottom: $single-bottom-padding
 
 		> h3
-			margin-bottom: $single-bottom-padding*0.8
+			margin-bottom: $single-bottom-padding*0.4
 			font-size: 1.4em
 			font-weight: 500
 			color: $gray
@@ -293,19 +254,15 @@ section.home-container
 
 			@media screen and (max-width: 767px)
 				+span-columns(12)
-				margin-bottom: $single-big-bottom-padding*1.2
+				margin-bottom: $single-big-bottom-padding*1
 
 			.testimonial-quote
 				margin-bottom: $single-bottom-padding*0.6
 				color: $medium-gray
-				font-size: 1.2em
+				font-size: 1em
 				font-weight: 300
 				line-height: 1.5
-				font-family: $heading-font-family
 				padding: 0
-
-				@media screen and (max-width: 767px)
-					font-weight: 400
 
 			.testimonial-flex-container
 				+display(flex)
@@ -333,6 +290,9 @@ section.home-container
 
 							&:last-of-type
 								font-weight: 400
+
+							@media screen and (max-width: 767px)
+								font-size: 0.8em
 
 	.call-to-action
 		margin: 0 0 $single-big-bottom-padding*2

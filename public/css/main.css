@@ -1059,12 +1059,15 @@ section.home-container {
       -o-align-items: flex-start;
       align-items: flex-start;
       -ms-flex-align: start; }
-      section.home-container .home-section.home-about .home-flex-container a:first-of-type {
-        margin-right: 2.4em; }
-    section.home-container .home-section.home-about a {
-      color: #E91E63; }
-      section.home-container .home-section.home-about a:hover {
-        color: #f27ba3; }
+      section.home-container .home-section.home-about .home-flex-container a {
+        color: #A8A8A8;
+        font-family: "Open Sans", sans-serif; }
+        section.home-container .home-section.home-about .home-flex-container a:first-of-type {
+          margin-right: 2.4em; }
+        section.home-container .home-section.home-about .home-flex-container a:hover.work {
+          color: #00BFA5; }
+        section.home-container .home-section.home-about .home-flex-container a:hover.about {
+          color: #E91E63; }
   section.home-container .home-testimonial {
     max-width: 68em;
     margin-left: auto;

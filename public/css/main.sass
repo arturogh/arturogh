@@ -222,14 +222,18 @@ section.home-container
 				+display(flex)
 				+align-items(flex-start)
 
-				a:first-of-type
-					margin-right: 2.4em
+				a
+					color: $gray
+					font-family: $heading-font-family
 
-			a
-				color: $about-color
+					&:first-of-type
+						margin-right: 2.4em
 
-				&:hover
-					color: lighten($about-color,20%)
+					&:hover.work
+						color: $work-color
+
+					&:hover.about
+						color: $about-color
 
 	.home-testimonial
 		+outer-container

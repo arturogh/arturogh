@@ -1128,11 +1128,20 @@ section.home-container {
         -ms-flex-align: center; }
         section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-photo {
           border-radius: 4px;
-          background: url("../images/me.jpg");
+          background: blue;
           background-size: cover;
           width: 60px;
           margin: 0;
           height: 60px; }
+          section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-photo.santiago {
+            background: url("../images/quotes/santiago-square.jpg");
+            background-size: cover; }
+          section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-photo.pepe {
+            background: url("../images/quotes/pepe.jpg");
+            background-size: cover; }
+          section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-photo.herman {
+            background: url("../images/quotes/herman.jpg");
+            background-size: cover; }
         section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-name {
           margin-left: 20px; }
           section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-name span {

@@ -13,13 +13,13 @@ excerpt: My personal story of how I became a designer and who really pushed and 
 
 <p>Looking back, I wouldn’t call it a mistake choosing this undergraduate. After all, it’s the path that got me where I am today (and I couldn’t be happier about that). Though I along the way I took several jobs that didn’t make me feel fulfilled or happy, in hindsight they were the “step by step” that brought me to Seattle.</p>
 
-<h2>The career change</h2>
+<h3>The career change</h3>
 
 <p>Since the first job I took as a marketing intern, I always felt it: a constant, everyday “pull” inside me towards CREATION. Though I couldn’t put it into words, I wanted to be making NEW things, each and everyday. The rare occasions I got to do it, I felt “in the flow”, ideas came easily, and I found myself smiling and having a blast. I loved it! Whenever I felt this, though, I questioned myself. Immediately, I felt bad about not wishing my job involved more creative tasks: wasn’t I supposed to be “working hard” like everybody else? Work, after all, isn’t “supposed” to be fun, right? That’s “supposed” to happen on the weekends or after work I thought. So I pushed on.</p>
 
 <p>It took a long time for my frustration to get to a point where I just couldn’t keep denying it. I wanted out. I wanted (needed) to find a job where I could express and channel all the creative energy I had inside me. Something I could call a calling. A job where I used the best parts of me, where I could express my best ideas, and grow most as a person. I just had to figure out what to do.</p>
 
-<h2>What pushed me forward</h2>
+<h3>What pushed me forward</h3>
 
 <p>There is, though, something, or rather someone, that really pushed me forward. My son. It was February 2014 and we found out he would be born around the end of 2014 (he was born on September 1st).</p>
 

@@ -38,6 +38,9 @@ $about-background-color: #FCE4EC;
 $blog-border-color: #BBDEFB;
 $work-border-color: #B2DFDB;
 $about-border-color: #F8BBD0;
+$work-hover-color: lighten($work-color, 10%);
+$blog-hover-color: lighten($blog-color, 10%);
+$about-hover-color: lighten($about-color,20%);
 
 // Font Colors
 $base-background-color: white;

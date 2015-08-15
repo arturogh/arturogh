@@ -339,7 +339,7 @@ section.home-container
 				padding: 0
 
 			&:hover
-				color: lighten($about-color,20%)
+				color: $about-hover-color
 
 //////// About ----------------------------------------------------------------------------
 
@@ -352,7 +352,7 @@ section.home-container
 		color: $about-color
 
 		&:hover
-			color: lighten($about-color, 20%)
+			color: $about-hover-color
 
 	h2
 		padding: 1em 0 $single-bottom-padding
@@ -471,6 +471,24 @@ section
 			font-size: 1.45em
 			color: $content-text-color
 			line-height: 1.85
+
+	.project-links
+		+display(flex)
+		+justify-content(space-around)
+		margin-bottom: $single-big-bottom-padding
+
+		li
+			list-style: none
+			font-family: $heading-font-family
+			color: $work-color
+			font-weight: 500
+			font-size: 1em
+
+			a
+				color: inherit
+
+				&:hover
+					color: $work-hover-color
 
 	img
 		box-shadow: 0 2px 4px darken($base-background-color, 10%)
@@ -693,7 +711,7 @@ section.blog-posts
 					color: inherit
 
 					&:hover
-						color: lighten($blog-color, 10%)
+						color: $blog-hover-color
 
 			p
 				color: $gray

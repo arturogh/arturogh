@@ -15,6 +15,8 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700|Open+Sans:400,300,500,700' rel='stylesheet' type='text/css'>
+  <!-- Smooth scrolling by Chris Ferdinandi https://github.com/cferdinandi/smooth-scroll -->
+  <script src="public/javaScript/scroll.min.js"></script>
 
 </head>
 
@@ -45,16 +47,17 @@
     </div>
   </aside>
   <p class="intro">This is an introductory paragraph to this section. What do you think about it? I kind of like it. To get a true feel about the project, I think we ought to make this a little bit longer. This way we can see more stuff and be happy that we are finally working.</p>
-  <h3 class="subtitle">The plan</h3>
-  <p>We should put a little paragraph just after the title so it seems like we know what we are talking about, don't you think? Well, I do, so we shall! Onward!</p>
-  <img src="public/images/long-img-1.jpg" alt="">
-  <p>Do a few lines of text fit here? Let's see.</p>
-  <ul>
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim corporis repudiandae vel. Omnis, voluptatibus aperiam adipisci. Impedit praesentium magni molestias quas necessitatibus quis nisi architecto quisquam consectetur porro, esse.</li>
-    <li>Consequatur similique optio ullam atque nobis error necessitatibus, non cupiditate provident facere laborum expedita nulla, reprehenderit amet, voluptatem molestias ex maiores nemo dicta. Iure iste distinctio quis fugiat asperiores porro!</li>
-    <li>Qui, repellat, accusantium! Expedita inventore numquam, cumque provident accusamus animi omnis iste ratione nihil, praesentium dolore aperiam ipsa! Libero tempora excepturi soluta eos incidunt perferendis suscipit, fugit unde ut mollitia!</li>
+  <ul class="project-links">
+    <li><a data-scroll href="#start">Summary</a></li>
+    <li><a href="" target="_blank">Case Study</a></li>
+    <li><a href="" target="_blank">Prototype</a></li>
+    <li><a href="" target="_blank">Documentation</a></li>
   </ul>
-  <h3 class="sub-title">What kind?</h3>
+  <h3 id="start">The plan</h3>
+  <img src="public/images/long-img-1.jpg" alt="">
+  <p>We should put a little paragraph just after the title so it seems like we know what we are talking about, don't you think? Well, I do, so we shall! Onward!</p>
+  <h3>What kind?</h3>
+  <img src="public/images/long-img-2.jpg" alt="">
   <p>
     I focus on IA, Interface design, and user resaerch, but know my way around more.
   </p>
@@ -66,5 +69,8 @@
   <h3>Lets put more titles here</h3>
   <p>This experience results in this story. I realised how much software we’re using influence our workflow logic. Right now we’re at the very exciting moment. Photoshop is getting old. It’s slow, its core code is heavily outdated and after all it was made as photo editor not interface design tool. Former champion became lazy and got fat. At the same time rebels appeared. But none of them is perfect.</p>
 </section>
+<script>
+    smoothScroll.init();
+</script>
 </body>
 </html>

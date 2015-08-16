@@ -747,17 +747,6 @@ section {
     section {
       padding-top: 1em; } }
 
-.absolute-container {
-  position: absolute;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  background: transparent; }
-  .absolute-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 header {
   max-width: 68em;
   margin-left: auto;
@@ -917,6 +906,7 @@ ul.filter-menu {
   ul.filter-menu li {
     padding-left: 1.6em;
     font-weight: 300;
+    list-style: none;
     font-size: 1.1em; }
     ul.filter-menu li:first-of-type {
       padding-left: 0; }
@@ -943,6 +933,17 @@ ul.filter-menu {
           border-bottom: 2px solid #03A9F4; }
         ul.filter-menu li a.selected.about-menu-link {
           border-bottom: 2px solid #E91E63; }
+
+.absolute-container {
+  position: absolute;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent; }
+  .absolute-container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 section.home-container {
   max-width: 68em;

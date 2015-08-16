@@ -40,10 +40,6 @@ section
 	@media screen and (max-width:767px)
 		padding-top: $top-padding-to-menu/2
 
-.absolute-container
-	position: absolute
-	+outer-container
-	background: rgba(0,0,0,0)
 
 //////// Header ----------------------------------------------------------------------------
 
@@ -107,6 +103,7 @@ ul.filter-menu
 	li
 		padding-left: 1.6em
 		font-weight: 300
+		list-style: none
 
 		font-size: 1.1em
 
@@ -139,6 +136,10 @@ ul.filter-menu
 				&.about-menu-link
 					border-bottom: 2px solid $about-color
 
+.absolute-container
+	position: absolute
+	+outer-container
+	background: rgba(0,0,0,0)
 
 //////// Home ----------------------------------------------------------------------------
 

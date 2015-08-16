@@ -1386,6 +1386,9 @@ section {
       font-size: 1.45em;
       color: rgba(0, 0, 0, 0.75);
       line-height: 1.85; }
+      @media screen and (max-width: 767px) {
+        section p.intro, section ul li.intro {
+          font-size: 1.2em; } }
   section .project-links {
     display: -webkit-box;
     display: -moz-box;

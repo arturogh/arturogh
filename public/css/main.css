@@ -679,7 +679,7 @@ picture {
 
 .hero {
   margin-top: 2em;
-  height: 380px;
+  height: 5000px;
   background-color: #324766;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -687,7 +687,7 @@ picture {
   padding-bottom: 3em; }
   @media screen and (max-width: 1111px) {
     .hero {
-      height: 280px; } }
+      height: 400px; } }
   @media screen and (max-width: 767px) {
     .hero {
       height: 200px; } }

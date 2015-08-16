@@ -30,12 +30,14 @@
 
   header {
   	.title h1 {
-			color: #fff
+			color: #fff;
     }
-		span {
-			color: #fff
-			font-weight: 400
-			font-family: $heading-font-family
+    ul.filter-menu li a {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

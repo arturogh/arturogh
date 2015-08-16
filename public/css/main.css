@@ -683,13 +683,10 @@ picture {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-  height: 500px; }
+  height: 480px; }
   @media screen and (max-width: 1111px) {
     .hero {
-      height: 400px; } }
-  @media screen and (max-width: 767px) {
-    .hero {
-      height: 200px; } }
+      height: 380px; } }
   .hero.blog {
     border-bottom: 4px solid #03A9F4; }
   .hero.work {

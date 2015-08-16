@@ -1432,6 +1432,9 @@ section {
       font-size: 1.1em;
       padding: 0;
       width: 45%; }
+      @media screen and (max-width: 767px) {
+        section .project-links li {
+          padding-bottom: 20px; } }
       section .project-links li a {
         color: inherit; }
         section .project-links li a:hover {

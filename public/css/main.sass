@@ -482,6 +482,9 @@ section
 		+justify-content(space-around)
 		margin-bottom: $single-big-bottom-padding
 
+		@media screen and (max-width:767px)
+			+justify-content(space-between)
+
 		li
 			list-style: none
 			font-family: $heading-font-family

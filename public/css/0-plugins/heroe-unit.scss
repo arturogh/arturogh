@@ -6,7 +6,11 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  margin-top: $top-padding-to-menu;
+  background-color: #324766;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
 
   height: 500px;
   @media screen and (max-width:1111px) {
@@ -24,10 +28,14 @@
     border-bottom: 4px solid $work-color;
   }
 
-  background-color: #324766;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 3em;
-
+  header {
+  	.title h1 {
+			color: #fff
+    }
+		span {
+			color: #fff
+			font-weight: 400
+			font-family: $heading-font-family
+    }
+  }
 }

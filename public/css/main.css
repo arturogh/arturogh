@@ -1430,7 +1430,8 @@ section {
       color: #00BFA5;
       font-weight: 500;
       font-size: 1.1em;
-      padding: 0; }
+      padding: 0;
+      width: 45%; }
       section .project-links li a {
         color: inherit; }
         section .project-links li a:hover {

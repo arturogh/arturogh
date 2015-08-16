@@ -747,6 +747,10 @@ section {
     section {
       padding-top: 1em; } }
 
+.absolute-container {
+  position: absolute;
+  background: transparent; }
+
 header {
   max-width: 68em;
   margin-left: auto;

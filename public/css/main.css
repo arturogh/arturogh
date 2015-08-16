@@ -699,7 +699,7 @@ picture {
 * {
   box-sizing: border-box; }
 
-body.home {
+body {
   position: relative; }
 
 @media screen and (max-width: 1088px) {

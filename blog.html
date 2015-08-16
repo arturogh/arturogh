@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+---
+
+  <section class="content blog-posts">
+
+    {% for post in paginator.posts %}
+
+    <div class="blog-post">
+      <div class="post-text">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+      <div class="image" style="background:url({{site.baseurl}}/public/images/post-images/{{post.image}}/thumbnail.jpg); background-size: cover; background-position: center center;"></div>
+    </div>
+
+    {% endfor %}
+
+  </section>
+
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older"></span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer"></span>
+  {% endif %}
+</div>

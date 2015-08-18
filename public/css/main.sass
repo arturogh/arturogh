@@ -174,11 +174,6 @@ section.home-container
 					font-size: 1.6em
 					font-weight: 500
 
-				a
-					color: inherit
-					padding: 0 !important
-					margin: 0
-
 			p
 				font-size: 1em
 				color: $gray
@@ -191,7 +186,7 @@ section.home-container
 				strong
 					color: $medium-gray
 
-			> a
+			a
 				display: block
 				font-family: $heading-font-family
 				font-weight: 500
@@ -204,6 +199,10 @@ section.home-container
 			+span-columns(8)
 			border-radius: $border-radius
 			height: 420px
+			background: url('../images/home-image.jpg')
+			background-repeat: no-repeat
+			background-position: top
+			background-size: cover
 
 			@media screen and (max-width: 1087px)
 				+span-columns(6)
@@ -213,31 +212,23 @@ section.home-container
 				+span-columns(12)
 
 
-		&.home-about
-			.image-section
-				background: url('../images/test3.jpg')
-				background-repeat: no-repeat
-				background-position: top
-				background-size: cover
-			h2
-				color: $medium-gray
+		.home-flex-container
+			+display(flex)
+			+align-items(flex-start)
 
-			.home-flex-container
-				+display(flex)
-				+align-items(flex-start)
+			a
+				color: $gray
+				font-family: $heading-font-family
 
-				a
-					color: $gray
-					font-family: $heading-font-family
+				&:first-of-type
+					margin-right: 2.4em
 
-					&:first-of-type
-						margin-right: 2.4em
+				&:hover.work
+					color: $work-color
 
-					&:hover.work
-						color: $work-color
+				&:hover.about
+					color: $about-color
 
-					&:hover.about
-						color: $about-color
 
 	.home-testimonial
 		+outer-container

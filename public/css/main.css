@@ -1366,7 +1366,8 @@ section {
       section h3.subtitle strong {
         font-size: 2.4em;
         font-weight: 700;
-        display: block; }
+        display: block;
+        color: #666666; }
   section p, section ul li {
     font-size: 1.25em;
     line-height: 2;

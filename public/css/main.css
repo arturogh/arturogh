@@ -1364,10 +1364,10 @@ section {
       font-size: 1.8em;
       color: #A8A8A8; }
       section h3.subtitle strong {
-        font-size: 1.8em;
-        font-weight: 700;
+        font-size: 1.4em;
+        font-weight: 400;
         display: block;
-        color: #666666; }
+        color: #424242; }
   section p, section ul li {
     font-size: 1.25em;
     line-height: 2;

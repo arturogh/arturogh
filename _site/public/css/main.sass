@@ -8,14 +8,6 @@
 body
 	position: relative
 
-//////// Header ----------------------------------------------------------------------------
-
-@media screen and (max-width:1088px)
-	header, section
-		padding: 0 0.4em
-		width: 100%
-		box-sizing: border-box
-
 @media screen and (min-width:750px)
 	body.content
 		section, header
@@ -33,15 +25,20 @@ body
 				@media screen and (max-width:1111px)
 					+padding(1em 0 0)
 
+//////// Header ----------------------------------------------------------------------------
+
+@media screen and (max-width:1088px)
+	header, section
+		padding: 0 0.6em
+		width: 100%
+		box-sizing: border-box
+
 section
 	padding-top: $top-padding-to-menu
 	font-weight: $content-text-weight
 
 	@media screen and (max-width:767px)
 		padding-top: $top-padding-to-menu/2
-
-
-//////// Header ----------------------------------------------------------------------------
 
 header
 	+outer-container
@@ -174,11 +171,6 @@ section.home-container
 					font-size: 1.6em
 					font-weight: 500
 
-				a
-					color: inherit
-					padding: 0 !important
-					margin: 0
-
 			p
 				font-size: 1em
 				color: $gray
@@ -191,7 +183,7 @@ section.home-container
 				strong
 					color: $medium-gray
 
-			> a
+			a
 				display: block
 				font-family: $heading-font-family
 				font-weight: 500
@@ -204,6 +196,10 @@ section.home-container
 			+span-columns(8)
 			border-radius: $border-radius
 			height: 420px
+			background: url('../images/home-image.jpg')
+			background-repeat: no-repeat
+			background-position: top
+			background-size: cover
 
 			@media screen and (max-width: 1087px)
 				+span-columns(6)
@@ -213,31 +209,23 @@ section.home-container
 				+span-columns(12)
 
 
-		&.home-about
-			.image-section
-				background: url('../images/test3.jpg')
-				background-repeat: no-repeat
-				background-position: top
-				background-size: cover
-			h2
-				color: $medium-gray
+		.home-flex-container
+			+display(flex)
+			+align-items(flex-start)
 
-			.home-flex-container
-				+display(flex)
-				+align-items(flex-start)
+			a
+				color: $gray
+				font-family: $heading-font-family
 
-				a
-					color: $gray
-					font-family: $heading-font-family
+				&:first-of-type
+					margin-right: 2.4em
 
-					&:first-of-type
-						margin-right: 2.4em
+				&:hover.work
+					color: $work-color
 
-					&:hover.work
-						color: $work-color
+				&:hover.about
+					color: $about-color
 
-					&:hover.about
-						color: $about-color
 
 	.home-testimonial
 		+outer-container
@@ -437,6 +425,7 @@ section
 		padding: 0.4em 0 0.6em
 		text-align: center
 		margin: 0
+		color: $dark-gray
 		@media screen and (max-width:767px)
 			font-size: 2.2em
 			padding: 0.8em 0 0.4em

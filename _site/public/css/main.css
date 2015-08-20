@@ -704,11 +704,6 @@ picture {
 body {
   position: relative; }
 
-@media screen and (max-width: 1088px) {
-  header, section {
-    padding: 0 0.4em;
-    width: 100%;
-    box-sizing: border-box; } }
 @media screen and (min-width: 750px) {
   body.content section, body.content header {
     max-width: 700px;
@@ -742,6 +737,11 @@ body {
     body.content .filter-menu {
       padding: 1em 0 0; } }
 
+@media screen and (max-width: 1088px) {
+  header, section {
+    padding: 0 0.6em;
+    width: 100%;
+    box-sizing: border-box; } }
 section {
   padding-top: 2em;
   font-weight: 400; }
@@ -1001,10 +1001,6 @@ section.home-container {
           section.home-container .home-section .text-section h2 {
             font-size: 1.6em;
             font-weight: 500; } }
-        section.home-container .home-section .text-section h2 a {
-          color: inherit;
-          padding: 0 !important;
-          margin: 0; }
       section.home-container .home-section .text-section p, section.home-container .home-section .text-section ul li, section.home-container ul .home-section .text-section li {
         font-size: 1em;
         color: #A8A8A8;
@@ -1015,13 +1011,13 @@ section.home-container {
             padding-bottom: 1.2em; } }
         section.home-container .home-section .text-section p strong, section.home-container .home-section .text-section ul li strong, section.home-container ul .home-section .text-section li strong {
           color: #666666; }
-      section.home-container .home-section .text-section > a {
+      section.home-container .home-section .text-section a {
         display: block;
         font-family: "Open Sans", sans-serif;
         font-weight: 500;
         font-size: 1em; }
         @media screen and (max-width: 767px) {
-          section.home-container .home-section .text-section > a {
+          section.home-container .home-section .text-section a {
             font-size: 1.2em; } }
     section.home-container .home-section .image-section {
       float: left;
@@ -1029,7 +1025,11 @@ section.home-container {
       margin-right: 2.35765%;
       width: 65.88078%;
       border-radius: 4px;
-      height: 420px; }
+      height: 420px;
+      background: url("../images/home-image.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; }
       section.home-container .home-section .image-section:last-child {
         margin-right: 0; }
       @media screen and (max-width: 1087px) {
@@ -1049,14 +1049,7 @@ section.home-container {
           width: 100%; }
           section.home-container .home-section .image-section:last-child {
             margin-right: 0; } }
-    section.home-container .home-section.home-about .image-section {
-      background: url("../images/test3.jpg");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover; }
-    section.home-container .home-section.home-about h2 {
-      color: #666666; }
-    section.home-container .home-section.home-about .home-flex-container {
+    section.home-container .home-section .home-flex-container {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -1073,14 +1066,14 @@ section.home-container {
       -o-align-items: flex-start;
       align-items: flex-start;
       -ms-flex-align: start; }
-      section.home-container .home-section.home-about .home-flex-container a {
+      section.home-container .home-section .home-flex-container a {
         color: #A8A8A8;
         font-family: "Open Sans", sans-serif; }
-        section.home-container .home-section.home-about .home-flex-container a:first-of-type {
+        section.home-container .home-section .home-flex-container a:first-of-type {
           margin-right: 2.4em; }
-        section.home-container .home-section.home-about .home-flex-container a:hover.work {
+        section.home-container .home-section .home-flex-container a:hover.work {
           color: #00BFA5; }
-        section.home-container .home-section.home-about .home-flex-container a:hover.about {
+        section.home-container .home-section .home-flex-container a:hover.about {
           color: #E91E63; }
   section.home-container .home-testimonial {
     max-width: 68em;
@@ -1350,7 +1343,8 @@ section {
     font-weight: 600;
     padding: 0.4em 0 0.6em;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    color: #424242; }
     @media screen and (max-width: 767px) {
       section h2 {
         font-size: 2.2em;

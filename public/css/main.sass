@@ -8,14 +8,6 @@
 body
 	position: relative
 
-//////// Header ----------------------------------------------------------------------------
-
-@media screen and (max-width:1088px)
-	header, section
-		padding: 0 0.4em
-		width: 100%
-		box-sizing: border-box
-
 @media screen and (min-width:750px)
 	body.content
 		section, header
@@ -33,15 +25,20 @@ body
 				@media screen and (max-width:1111px)
 					+padding(1em 0 0)
 
+//////// Header ----------------------------------------------------------------------------
+
+@media screen and (max-width:1088px)
+	header, section
+		padding: 0 0.6em
+		width: 100%
+		box-sizing: border-box
+
 section
 	padding-top: $top-padding-to-menu
 	font-weight: $content-text-weight
 
 	@media screen and (max-width:767px)
 		padding-top: $top-padding-to-menu/2
-
-
-//////// Header ----------------------------------------------------------------------------
 
 header
 	+outer-container

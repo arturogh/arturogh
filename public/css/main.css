@@ -704,11 +704,6 @@ picture {
 body {
   position: relative; }
 
-@media screen and (max-width: 1088px) {
-  header, section {
-    padding: 0 0.4em;
-    width: 100%;
-    box-sizing: border-box; } }
 @media screen and (min-width: 750px) {
   body.content section, body.content header {
     max-width: 700px;
@@ -742,6 +737,11 @@ body {
     body.content .filter-menu {
       padding: 1em 0 0; } }
 
+@media screen and (max-width: 1088px) {
+  header, section {
+    padding: 0 0.6em;
+    width: 100%;
+    box-sizing: border-box; } }
 section {
   padding-top: 2em;
   font-weight: 400; }

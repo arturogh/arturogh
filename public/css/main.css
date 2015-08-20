@@ -1361,11 +1361,10 @@ section {
       width: 100%;
       border-bottom: solid 1px #00BFA5;
       font-weight: 300;
-      color: #A8A8A8;
-      font-size: 1.8em; }
+      font-size: 2.4em; }
       section h3.subtitle strong {
         font-weight: 400;
-        color: #666666; }
+        display: block; }
   section p, section ul li {
     font-size: 1.25em;
     line-height: 2;

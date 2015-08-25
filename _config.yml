@@ -13,8 +13,7 @@ baseurl:             'http://arturogoicochea.com'
 paginate:            5
 
 # About/contact
-author:
-  name:              Arturo Goicochea
-  twitter:           https://twitter.com/arturogoicochea
-  email:             arturo@arturogoicochea.com
-  resume:            https://www.dropbox.com/s/fi9g8khujvpuryc/Resume-Arturo-Goicochea-20150815-v4.pdf?dl=0
+name:              Arturo Goicochea
+twitter:           https://twitter.com/arturogoicochea
+email:             arturo@arturogoicochea.com
+resume:            https://www.dropbox.com/s/fi9g8khujvpuryc/Resume-Arturo-Goicochea-20150815-v4.pdf?dl=0

@@ -679,7 +679,7 @@ picture {
 
 .hero {
   background-color: #324766;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;

@@ -1,0 +1,108 @@
+@media screen and (max-width:1088px)
+	header, section
+		padding: 0 0.6em
+		width: 100%
+		box-sizing: border-box
+
+section
+	padding-top: $top-padding-to-menu
+	font-weight: $content-text-weight
+
+	@media screen and (max-width:767px)
+		padding-top: $top-padding-to-menu/2
+
+header
+	+outer-container
+	+display(flex)
+	+flex-direction(row)
+	+align-items(baseline)
+	+justify-content(space-between)
+
+	@media screen and (max-width:1111px)
+		padding-top: 0.6em
+
+	@media screen and (max-width:767px)
+		+display(block)
+		padding-top: 0.4em
+
+	.title
+		+display(flex)
+		@media screen and (max-width:767px)
+			+justify-content(center)
+
+		+padding(2em 0 0)
+		@media screen and (max-width:1111px)
+			+padding(1em 0 0)
+		+flex(1)
+
+		h1
+			font-size: 2.2em
+			font-weight: 400
+			margin: 0
+			color: $dark-gray
+
+			a
+				color: inherit
+
+				&:hover
+					color: inherit
+
+			@media screen and (max-width: 768px)
+				font-size: 1.9em
+
+		span
+			color: $gray
+			font-weight: 400
+			font-family: $heading-font-family
+
+ul.filter-menu
+	+display(flex)
+	+flex-direction(row)
+	+align-items(baseline)
+	+justify-content(space-between)
+	@media screen and (max-width:1111px)
+		+justify-content(center)
+	@media screen and (max-width:767px)
+		+justify-content(center)
+		padding-top: 1em
+
+	li
+		padding-left: 1.6em
+		font-weight: 300
+		list-style: none
+
+		font-size: 1.1em
+
+		&:first-of-type
+			padding-left: 0
+
+		a
+			color: $gray
+			font-family: $heading-font-family
+			@media screen and (max-width: 768px)
+				font-size: 0.9em
+
+			&:hover
+				color: $medium-gray
+
+			&.work-menu-link:hover
+				border-bottom: 2px solid $work-color
+			&.blog-menu-link:hover
+				border-bottom: 2px solid $blog-color
+			&.about-menu-link:hover
+				border-bottom: 2px solid $about-color
+
+			&.selected
+				color: $medium-gray
+				font-weight: 400
+				&.work-menu-link
+					border-bottom: 2px solid $work-color
+				&.blog-menu-link
+					border-bottom: 2px solid $blog-color
+				&.about-menu-link
+					border-bottom: 2px solid $about-color
+
+.absolute-container
+	position: absolute
+	+outer-container
+	background: rgba(0,0,0,0)

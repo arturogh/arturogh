@@ -1,0 +1,310 @@
+//////// Home ----------------------------------------------------------------------------
+
+section.home-container
+	+outer-container
+	margin-top: $single-big-bottom-padding
+
+	.home-section
+		position: relative
+		margin-bottom: $single-big-bottom-padding*1.2
+		+outer-container
+
+		.text-section
+			+span-columns(4)
+
+			@media screen and (max-width: 1087px)
+				+span-columns(6)
+
+			@media screen and (max-width: 767px)
+				padding-bottom: $single-bottom-padding
+				+span-columns(12)
+
+			h2
+				padding: 0 0 $single-bottom-padding*0.4
+				margin: 0
+				font-size: 1.8em
+				font-weight: 600
+				color: $medium-gray
+				text-align: left
+
+				@media screen and (max-width: 767px)
+					font-size: 1.6em
+					font-weight: 500
+
+			p
+				font-size: 1em
+				color: $gray
+				font-weight: 300
+				padding-bottom: $single-bottom-padding*1.2
+
+				@media screen and (max-width: 767px)
+					padding-bottom: $single-bottom-padding
+
+				strong
+					color: $medium-gray
+
+			a
+				display: block
+				font-family: $heading-font-family
+				font-weight: 500
+				font-size: 1em
+
+				@media screen and (max-width: 767px)
+					font-size: 1.2em
+
+		.image-section
+			+span-columns(8)
+			border-radius: $border-radius
+			height: 420px
+			background: url('../images/home-image.jpg')
+			background-repeat: no-repeat
+			background-position: top
+			background-size: cover
+
+			@media screen and (max-width: 1087px)
+				+span-columns(6)
+
+			@media screen and (max-width: 767px)
+				height: 250px
+				+span-columns(12)
+
+	.home-testimonial
+		+outer-container
+		margin-bottom: $single-big-bottom-padding
+		margin-top: $single-big-bottom-padding
+
+		@media screen and (max-width: 767px)
+			margin-bottom: $single-bottom-padding
+
+		> h3
+			margin-bottom: $single-bottom-padding*0.4
+			font-size: 1.4em
+			font-weight: 500
+			color: $gray
+
+		.testimonial
+			+span-columns(4)
+
+			@media screen and (min-width: 768px)
+				padding-right: 2em
+
+			@media screen and (max-width: 767px)
+				+span-columns(12)
+				margin-bottom: $single-bottom-padding
+
+			.testimonial-quote
+				margin-bottom: $single-bottom-padding*0.6
+				color: $medium-gray
+				font-size: 1em
+				font-weight: 300
+				line-height: 1.5
+				padding: 0
+
+			.testimonial-flex-container
+				+display(flex)
+				+align-items(center)
+
+				.testimonial-photo
+					border-radius: $border-radius
+					background: blue
+					background-size: cover
+					width: 60px
+					margin: 0
+					height: 60px
+
+					&.santiago
+						background: url('../images/quotes/santiago-square.jpg')
+						background-size: cover
+
+					&.pepe
+						background: url('../images/quotes/pepe.jpg')
+						background-size: cover
+
+					&.herman
+						background: url('../images/quotes/herman.jpg')
+						background-size: cover
+
+				.testimonial-name
+					margin-left: 20px
+
+					span
+						color: $gray
+						font-size: 1em
+						font-weight: 300
+						display: block
+						padding: 0
+						margin: 0
+
+						&:last-of-type
+							font-weight: 400
+
+//////// Work feed ----------------------------------------------------------------------------
+
+.work-posts-feed
+	+outer-container
+	margin: 2em auto 0
+
+	@media screen and (max-width: 1087px)
+		width: 100%
+
+		@media screen and (max-width:767px)
+			padding: $single-bottom-padding 0 0
+
+
+	.work-posts-box
+		h2
+			margin-bottom: $single-bottom-padding
+		.work-post
+			+outer-container
+			min-height: 320px
+			background: white
+			padding-bottom: $single-big-bottom-padding*2
+
+			&:first-of-type
+				margin-top: $single-bottom-padding
+
+			&:last-of-type
+				margin-bottom: 0
+
+			.work-post-image
+				border-radius: $border-radius
+				+span-columns(6)
+				min-height: 360px
+				height: 100%
+
+				@media screen and (max-width:767px)
+					+span-columns(8)
+					+shift(2)
+					border-radius: 0
+					margin-top: 1em
+					min-height: 280px !important
+
+				@media screen and (max-width: 500px)
+					min-height: 220px !important
+					+span-columns(10)
+					+shift(1)
+
+
+			.work-post-text
+				+span-columns(6)
+
+				@media screen and (max-width:767px)
+					+span-columns(12)
+					padding: 1em
+					height: 100%
+
+
+				h2
+					padding: 0 0 $single-bottom-padding*0.4
+					margin: 0 auto
+					font-size: 1.5em
+					font-weight: 700
+					color: $work-color
+					text-align: left
+
+
+					a
+						color: inherit
+
+						&:hover
+							color: $work-color
+
+
+				p
+					font-size: 1.2em
+					font-weight: 300
+					padding: 0 0 $single-bottom-padding*1.4
+					margin: 0 auto
+					color: $gray
+					line-height: 1.6
+
+					@media screen and (max-width:1087px)
+						font-size: 1.2em
+
+					@media screen and (max-width:767px)
+						font-size: 1em
+						color: $gray
+						padding: 0 0 $single-bottom-padding
+
+
+				.details
+
+					span
+						color: $gray
+						display: block
+						font-weight: 300
+						font-size: 1.1em
+						font-family: $heading-font-family
+						color: $gray
+
+						&:first-of-type
+							padding-bottom: $single-bottom-padding/2
+
+						@media screen and (max-width:1087px)
+							max-width: 100%
+
+	&.projects
+
+		h2
+			margin: $single-big-bottom-padding 0 0
+			padding: 0
+			font-weight: 300
+			font-size: 2em
+
+		> span
+			text-align: center
+			display: block
+			width: 100%
+			padding: 0.6em
+			color: $gray
+			font-family: $heading-font-family
+			padding-bottom: $single-big-bottom-padding
+
+		.personal-projects-feed
+			+outer-container
+
+			.personal-project-item
+				+span-columns(5)
+				border: 1px solid $gray
+				border-radius: $border-radius
+				padding: 0.8em
+				margin-bottom: $single-big-bottom-padding
+
+				@media screen and (max-width:767px)
+					+span-columns(10)
+					+shift(1)
+
+				@media screen and (min-width:768px)
+					&:nth-of-type(2n+1)
+						+shift(1)
+
+					&:nth-of-type(2n+2)
+						+omega()
+
+				.project-type, .date
+					font-family: $heading-font-family
+					color: $gray
+					font-size: 0.8em
+
+				h2
+					padding: 0 0 $single-bottom-padding/2
+					margin: 0
+					text-align: left
+					font-size: 1.4em
+					font-weight: 600
+
+					a
+						color: inherit
+
+						&:hover
+							color: $work-color
+
+				p
+					font-size: 1em
+					color: $gray
+					padding-bottom: $single-big-bottom-padding
+
+				.date
+					display: block
+					width: 100%
+					text-align: right

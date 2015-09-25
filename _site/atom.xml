@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Arturo Goicochea</title>
- <link href="http://arturogoicochea.comhttp://arturogoicochea.com/atom.xml" rel="self"/>
- <link href="http://arturogoicochea.comhttp://arturogoicochea.com/"/>
- <updated>2015-08-19T18:17:27-07:00</updated>
- <id>http://arturogoicochea.com</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2015-09-21T21:11:32-04:00</updated>
+ <id></id>
  <author>
-   <name>Arturo Goicochea</name>
-   <email>arturo@arturogoicochea.com</email>
+   <name></name>
+   <email></email>
  </author>
 
  
  <entry>
    <title>My coming out...as a designer</title>
-   <link href="http://arturogoicochea.com/blog/2015/07/14/my-career-change/"/>
-   <updated>2015-07-14T00:00:00-07:00</updated>
-   <id>http://arturogoicochea.comhttp://arturogoicochea.com/blog/2015/07/14/my-career-change</id>
+   <link href="/blog/2015/07/14/my-career-change/"/>
+   <updated>2015-07-14T00:00:00-04:00</updated>
+   <id>/blog/2015/07/14/my-career-change</id>
    <content type="html">&lt;p&gt;2007: I wasn’t sure what to study in college for my undergraduate. Computer science had been on my mind, but it didn’t convince me. Since I was a small boy, I had always &lt;em&gt;loved&lt;/em&gt; computers. But, for some reason, when I pictured myself working as a CS undergrad, I saw boring jobs sitting behind a computer, in a cubicle, doing monotonous tasks all day. Today I know that that is not the case, but back then my zero knowledge of code, design or jobs in the industry lead to me imagining it that way. I thought, if it’s not working on video games, it will probably be boring. That led me to make a more logical and cold choice: an undergrad that should ensure my “professional success”.&lt;/p&gt;
 
 &lt;p&gt;What I ended up studying was industrial engineering. The curriculum my college had for this program (and how it is perceived in Lima) meant you were basically eligible to work in marketing, finance, HR, sales, production or basically anywhere in a company. A very flexible career indeed. Several cousins of mine had studied it and were happily employed. What was not to love? During my time in college I wished I could get out an learn on my own, do my thing. I didn’t have the courage to do it though. When I thought about doing it, I saw uncertainty, and that scared the sh*it out of me. Fear led me to expect failure, and so, in March 2013 I would graduate as an industrial engineer and start working in HR at a big Peruvian corporation.&lt;/p&gt;
@@ -33,7 +33,7 @@
 
 &lt;p&gt;There is, though, something, or rather someone, that really pushed me forward. My son. It was February 2014 and we found out he would be born around the end of 2014 (he was born on September 1st).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://arturogoicochea.com/public/images/Iker_and_me.jpg&quot; alt=&quot;My son and me&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/Iker_and_me.jpg&quot; alt=&quot;My son and me&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the midst of the tension I was living from my job, this is the key event that made me act: I make my move now…or it will be too late to make any kind of drastic changes in my life once my son get’s here. What actually made me take the leap, though, was the feeling I would be the worst example possible for my son. How could I, later on in life, tell him to be true to himself, to chase his dreams and always believe in himself if I had done exactly the opposite? I decided to go all in. I was no longer living life just for myself. This was the time to finally listen to my gut and chase what I knew, deep down, was not only my passion, but my strong suit. I would become a UX designer.&lt;/p&gt;
 
@@ -49,11 +49,11 @@
  
  <entry>
    <title>Defend your hobby</title>
-   <link href="http://arturogoicochea.com/blog/2015/05/28/my-second-post/"/>
-   <updated>2015-05-28T00:00:00-07:00</updated>
-   <id>http://arturogoicochea.comhttp://arturogoicochea.com/blog/2015/05/28/my-second-post</id>
+   <link href="/blog/2015/05/28/my-second-post/"/>
+   <updated>2015-05-28T00:00:00-04:00</updated>
+   <id>/blog/2015/05/28/my-second-post</id>
    <content type="html">&lt;p&gt;I&#39;m a big proponent of defending your hobby. If there is something you love doing, why give it away? What I mean is, why give away the fun and passion you have doing it by starting to do it just for money and work?&lt;/p&gt;
-&lt;div&gt;&lt;img src=&quot;http://arturogoicochea.com/public/images/long-img-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&quot;/public/images/long-img-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
 &lt;p&gt;Personally, photography is just too valuable for me. When I&#39;m out shooting in the city or a beach maybe, inmediately I&#39;m lost in the moment and just disappear into &quot;photo&quot; mode. I&#39;m not thinking, just feeling and sensing. Without really noticing it, I disect what I see, compose photos in my head, rome around, climb, run. I escape and have TONS of fun. It&#39;s fantastic!&lt;/p&gt;
 &lt;p&gt;It makes me happy and fills my energy &quot;gas tank&quot;. So, it&#39;s not just happiness, it actually helps me be better in the other aspects of my life. And it does because I haven&#39;t given away control over it, and so can have fun and be passionate about doing it. Because when you can&#39;t do it for fun, then, well you just gave away the fun!&lt;/p&gt;
 &lt;p&gt;I have nothing against winning money from your hobby. I do sell my photos for instance. What&#39;s really important though, is to never stop getting that fulfillment from what you love doing. It is just too valuable to lose!&lt;/p&gt;

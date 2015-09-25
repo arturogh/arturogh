@@ -1,0 +1,31 @@
+a.button
+	color: $gray
+	font-family: $heading-font-family
+	display: inline-block !important
+	padding: 10px
+	border: 1px solid
+	border-radius: $border-radius
+	font-weight: 500
+
+	@media screen and (max-width:767px)
+		font-size: 0.8em !important
+
+	&:first-of-type
+		margin-bottom: 1.2em
+		margin-right: 2em
+
+	&.work
+		color: $work-color
+		border-color: $work-color
+
+	&:hover.work
+		color: #fff
+		background: $work-color
+
+	&.about
+		color: $about-color
+		border-color: $about-color
+
+	&:hover.about
+		background: $about-color
+		color: #fff

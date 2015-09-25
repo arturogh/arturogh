@@ -1,0 +1,43 @@
+.about-me
+	+outer-container
+	padding-top: $top-padding-to-menu
+	text-align: center
+
+	a
+		color: $about-color
+
+		&:hover
+			color: $about-hover-color
+
+	h2
+		padding: 1em 0 $single-bottom-padding
+		font-size: 2em
+		font-weight: 400
+		line-height: 1.6
+		color: $medium-gray
+
+		@media screen and (max-width: 767px)
+			+span-columns(10)
+			+shift(1)
+
+	img
+		height: auto
+		width: 500px
+		margin: 0 auto $single-bottom-padding
+		border-radius: $border-radius
+
+	.-bio
+		text-align: left
+
+	> span:nth-of-type(1n+1)
+		margin-top: 1em
+		+display(block)
+
+	.single-skill
+		+display(flex)
+		+align-content(stretch)
+		+align-items(flex-start)
+		+span-columns(6)
+
+	.long-version
+		display: none

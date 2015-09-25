@@ -1,0 +1,142 @@
+section
+	color: $medium-gray
+
+	aside
+		+display(flex)
+		+justify-content(center)
+		padding-bottom: $single-big-bottom-padding
+
+		@media screen and (max-width: 767px)
+			+display(block)
+
+		div
+			font-size: 1em
+			padding: 0 0.8em 0
+
+			@media screen and (max-width: 767px)
+				text-align: center
+
+			> h3
+				font-weight: 400
+				color: $dark-gray
+				display: inline-block
+				padding-right: 0.2em
+				font-size: inherit
+				margin: 0
+
+				@media screen and (max-width: 767px)
+					padding-right: 0
+
+			> p
+				font-weight: 300
+				color: $medium-gray
+				display: inline-block
+				font-family: $heading-font-family
+				font-size: inherit
+				margin: 0
+
+	h2
+		font-size: 3em
+		font-weight: 600
+		padding: 0.4em 0 0.6em
+		text-align: center
+		margin: 0
+		color: $dark-gray
+		@media screen and (max-width:767px)
+			font-size: 2.2em
+			padding: 0.8em 0 0.4em
+
+
+	h3
+		font-size: 1.8em
+		font-weight: 700
+		padding: $single-bottom-padding 0 $single-bottom-padding/2
+		margin: 0
+		color: $medium-gray
+
+		&.subtitle
+			margin: $single-bottom-padding*0.8 0 $single-bottom-padding*0.6
+			padding: $single-bottom-padding*0.2 0
+			width: 100%
+			border-bottom: solid 1px $work-color
+			font-weight: 300
+			font-size: 1.8em
+			color: $gray
+
+			strong
+				font-size: 1.4em
+				font-weight: 400
+				display: block
+				color: $dark-gray
+
+	p
+		font-size: 1.25em
+		line-height: 2
+		font-weight: 400
+		margin: 0
+		color: $content-text-color
+		padding-bottom: $single-bottom-padding
+		@media screen and (max-width:767px)
+			font-size: 1.2em
+
+		&.intro
+			padding: 0 0 $single-big-bottom-padding*1.4
+			margin: 0
+			font-weight: 300
+			font-family: $heading-font-family
+			font-size: 1.45em
+			color: $content-text-color
+			line-height: 1.85
+
+	.project-links
+		+display(flex)
+		+flex-wrap(wrap)
+		+justify-content(space-around)
+		padding: 0
+		text-align: center
+		margin-bottom: $single-big-bottom-padding
+
+		@media screen and (max-width:767px)
+			+justify-content(flex-start)
+
+		li
+			list-style: none
+			font-family: $heading-font-family
+			color: $work-color
+			font-weight: 500
+			font-size: 1.1em
+			padding: 0
+			display: inline-block
+
+			@media screen and (max-width:767px)
+				padding-bottom: 20px
+
+			a
+				color: inherit
+
+				&:hover
+					color: $work-hover-color
+
+	img
+		// box-shadow: 0 2px 10px darken($base-background-color, 10%)
+		// margin: 1.5em 0
+		// margin-bottom: $single-big-bottom-padding
+	ul
+		list-style: disc
+		padding-top: $single-bottom-padding
+		padding-left: $single-bottom-padding
+
+		li
+			@extend p
+			padding-left: $single-bottom-padding
+			@media screen and (max-width:767px)
+				font-size: 1em
+				line-height: 1.8
+
+h2.blog-post-title
+	padding-top: 1em
+	margin: 0
+	font-size: 2.6em
+	font-weight: 600
+	text-align: center
+	color: $gray

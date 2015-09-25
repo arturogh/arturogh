@@ -1,0 +1,53 @@
+//////// Blog feed ----------------------------------------------------------------------------
+
+section.blog-posts
+	+outer-container
+
+	.blog-post
+		+span-columns(12)
+		margin-bottom: $single-big-bottom-padding*2
+
+		&:last-of-type
+			border-bottom-color: #fff
+
+		@media screen and (max-width:767px)
+			+span-columns(10)
+			+shift(1)
+
+		.post-text
+			+span-columns(8)
+
+			@media screen and (max-width:767px)
+				+span-columns(12)
+
+			h2
+				color: $blog-color
+				font-size: 1.5em
+				font-weight: 600
+				padding: 0 0 0.8em
+				margin: 0
+				position: relative
+				text-align: left
+
+				a
+					color: inherit
+
+					&:hover
+						color: $blog-hover-color
+
+			p
+				color: $gray
+				padding: 0 0 0.6em
+				margin: 0
+				line-height: 1.6em
+				font-weight: 300
+
+		.image
+			+span-columns(4)
+			height: 200px
+			border-radius: $border-radius
+
+			@media screen and (max-width:767px)
+				+span-columns(12)
+				height: 320px
+				border-radius: 0 0 $border-radius $border-radius

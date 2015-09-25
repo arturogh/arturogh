@@ -8,8 +8,8 @@ relative_permalinks: true
 title:               'Arturo Goicochea'
 tagline:             'UX'
 description:         "Hi, lets talk! My thing is being critical, analytical and above all fostering creativity. I can't bear spending a day without <em>creating</em> something."
-url:                 #'http://arturogoicochea.com'
-baseurl:             #'http://arturogoicochea.com'
+url:                 'http://arturogoicochea.com'
+baseurl:             'http://arturogoicochea.com'
 paginate:            5
 
 # About/contact

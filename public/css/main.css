@@ -1093,7 +1093,7 @@ section.home-container {
           width: 100%; }
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
-      @media screen and (max-width: 767) {
+      @media screen and (max-width: 767px) {
         section.home-container .home-testimonial .testimonial {
           margin-bottom: 2.4em; } }
       section.home-container .home-testimonial .testimonial .testimonial-quote {

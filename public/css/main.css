@@ -1077,20 +1077,20 @@ section.home-container {
       @media screen and (min-width: 768px) {
         section.home-container .home-testimonial .testimonial {
           padding-right: 2em; } }
-      @media screen and (min-width: 500px) and (max-width: 766px) {
-        section.home-container .home-testimonial .testimonial {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 65.88078%; }
-          section.home-container .home-testimonial .testimonial:last-child {
-            margin-right: 0; } }
       @media screen and (max-width: 767px) {
         section.home-container .home-testimonial .testimonial {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
+          width: 100%; }
+          section.home-container .home-testimonial .testimonial:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 500px) and (max-width: 766px) {
+        section.home-container .home-testimonial .testimonial {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
           margin-bottom: 2.4em; }
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }

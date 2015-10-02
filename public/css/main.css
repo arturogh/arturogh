@@ -1105,7 +1105,7 @@ section.home-container {
         @media screen and (max-width: 767px) {
           section.home-container .home-testimonial .testimonial .testimonial-quote {
             margin-bottom: 0.36em; } }
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 950px) and (min-width: 767px) {
           section.home-container .home-testimonial .testimonial .testimonial-quote {
             min-height: 70px; } }
       section.home-container .home-testimonial .testimonial .testimonial-flex-container {

@@ -1087,7 +1087,7 @@ section.home-container {
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
       section.home-container .home-testimonial .testimonial .testimonial-quote {
-        margin-bottom: 0.72em;
+        margin-bottom: 0.24em;
         color: #666666;
         font-size: 0.9em;
         font-weight: 300;

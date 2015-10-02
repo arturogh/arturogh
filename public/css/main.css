@@ -1090,10 +1090,12 @@ section.home-container {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
-          margin-bottom: 2.4em; }
+          width: 100%; }
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
+      @media screen and (max-width: 767) {
+        section.home-container .home-testimonial .testimonial {
+          margin-bottom: 2.4em; } }
       section.home-container .home-testimonial .testimonial .testimonial-quote {
         margin-bottom: 0.72em;
         color: #666666;

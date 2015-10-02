@@ -88,6 +88,9 @@ section.home-container
 			@media screen and (min-width: 768px)
 				padding-right: 2em
 
+			@media screen and (min-width: 500px) and (max-width: 766px)
+				+span-columns(8)
+
 			@media screen and (max-width: 767px)
 				+span-columns(12)
 				margin-bottom: $single-big-bottom-padding
@@ -101,8 +104,9 @@ section.home-container
 				padding: 0
 				min-height: 60px
 				@media screen and (max-width: 767px)
-					margin-bottom: $single-bottom-padding*0.1
-
+					margin-bottom: $single-bottom-padding*0.3
+				@media screen and (max-width: 950px)
+					min-height: 70px
 
 
 			.testimonial-flex-container

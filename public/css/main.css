@@ -1087,13 +1087,16 @@ section.home-container {
           section.home-container .home-testimonial .testimonial:last-child {
             margin-right: 0; } }
       section.home-container .home-testimonial .testimonial .testimonial-quote {
-        margin-bottom: 0.24em;
+        margin-bottom: 0.72em;
         color: #666666;
         font-size: 0.9em;
         font-weight: 300;
         line-height: 1.5;
         padding: 0;
         min-height: 60px; }
+        @media screen and (max-width: 767px) {
+          section.home-container .home-testimonial .testimonial .testimonial-quote {
+            margin-bottom: 0.12em; } }
       section.home-container .home-testimonial .testimonial .testimonial-flex-container {
         display: -webkit-box;
         display: -moz-box;

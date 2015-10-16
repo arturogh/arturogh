@@ -1740,7 +1740,7 @@ a.button {
         #contact-info-pane-id .flexbox-container a {
           display: block;
           padding-top: 20px;
-          width: 50%;
+          width: 100%;
           text-align: center; } }
     #contact-info-pane-id .flexbox-container ul {
       width: 50%; }

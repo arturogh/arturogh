@@ -1741,7 +1741,9 @@ a.button {
           display: block;
           padding-top: 20px;
           width: 100%;
-          text-align: center; } }
+          text-align: center; }
+          #contact-info-pane-id .flexbox-container a h4 {
+            width: 100%; } }
     #contact-info-pane-id .flexbox-container ul {
       width: 50%; }
       @media screen and (max-width: 600px) {

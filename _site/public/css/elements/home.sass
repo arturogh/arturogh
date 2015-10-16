@@ -87,18 +87,26 @@ section.home-container
 
 			@media screen and (min-width: 768px)
 				padding-right: 2em
-
-			@media screen and (max-width: 767px)
+			@media screen and (min-width: 500px) and (max-width: 766px)
+				+span-columns(8)
+			@media screen and (max-width: 499px)
 				+span-columns(12)
-				margin-bottom: $single-bottom-padding
+			@media screen and (max-width: 767px)
+				margin-bottom: $single-big-bottom-padding
 
 			.testimonial-quote
 				margin-bottom: $single-bottom-padding*0.6
 				color: $medium-gray
-				font-size: 1em
+				font-size: 0.9em
 				font-weight: 300
 				line-height: 1.5
 				padding: 0
+				min-height: 60px
+				@media screen and (max-width: 767px)
+					margin-bottom: $single-bottom-padding*0.3
+				@media screen and (max-width: 950px) and (min-width: 767px)
+					min-height: 86px
+
 
 			.testimonial-flex-container
 				+display(flex)
@@ -129,7 +137,7 @@ section.home-container
 
 					span
 						color: $gray
-						font-size: 1em
+						font-size: 0.8em
 						font-weight: 300
 						display: block
 						padding: 0

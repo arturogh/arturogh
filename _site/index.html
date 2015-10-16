@@ -7,8 +7,7 @@
   <title>Arturo Goicochea is a UX Designer</title>
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="p:domain_verify" content="49a67071542a342fde60c7b9caa16c52"/>  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="/public/css/normalize.css">
   <link rel="stylesheet" href="/public/css/main.css">
@@ -47,7 +46,18 @@
 
 </head>
 
+
 <body class="home">
+
+  <div id="contact-info-pane-id" class="contact-info-pane">
+  <div class="flexbox-container">
+    <ul>
+      <li><strong>Email</strong>: arturo@arturogoicochea.com</li>
+      <li><strong>Twitter</strong>: @arturogoicochea</li>
+    </ul>
+    <a href="#" onclick="hide_contact_pane('contact-info-pane-id');"><h4>Close</h4></a>
+  </div>
+</div>
 
   <header>
     <div class="title">
@@ -58,7 +68,7 @@
         <li><a data-scroll href="#ux-work" class="work-menu-link">Work</a></li>
         <li><a href="/blog/index.html" class="blog-menu-link">Blog</a></li>
         <li><a href="/about/index.html" class="about-menu-link">About</a></li>
-        <li><a href="mailto:arturo@arturogoicochea.com" class="about-menu-link">Let's Talk</a></li>
+        <li><a href="#" id="contact-pane-anchor" class="about-menu-link" onclick="show_contact_pane('contact-info-pane-id');">Contact</a></li>
       </ul>
 </header>
 
@@ -94,7 +104,7 @@
           <div class="testimonial-photo herman"></div>
           <div class="testimonial-name">
             <span>Herman Marin</span>
-            <span>Co-founder</span>
+            <span>Co-founder and Tech. Lead</span>
             <span>Laboratoria</span>
           </div>
         </div>
@@ -117,7 +127,7 @@
           <h2 id="ux-work">UX work</h2>
           <div class="work-post">
             <div class="work-post-text">
-              <h2 class="flex-title"><a href=" /work/Project-1/index.html">REI Explorer</a></h2>
+              <h2 class="flex-title"><a href="/work/Project-1/index.html">REI Explorer</a></h2>
               <p>This project included a complex information architecture and interaction design, building a website that pushes people to enjoy the great outdoors and increases purchases through REI.</p>
               <div class="details">
                 <span><strong>Role: </strong>Research, design and user testing</span>
@@ -127,18 +137,18 @@
             <div class="work-post-image" style="background:url(/public/images/work-images/a-travel-planning-app/thumbnail.jpg); background-size: cover;">
             </div>
           </div>
-          <!-- <div class="work-post">
+          <div class="work-post">
             <div class="work-post-text">
               <h2 class="flex-title"><a href="http://arturogoicochea.com/work/Project-2/index.html">Social features in Kindle</a></h2>
-              <p>Talking to users, we found out how to please all their desires. They told us, and we listened. And we worked super hard for a whole week this summer.</p>
+              <p>Introducing a social interactions to the Kindle iPad app to increase user engagement.</p>
               <div class="details">
-                <span><strong>Role: </strong>Research, wireframes</span>
-                <span><strong>Tools: </strong>Sketch, Invision</span>
+                <span><strong>Role: </strong>research, design, user testing</span>
+                <span><strong>Tools: </strong>Axure, Sketch, Omnigraffle, paper iPad app</span>
               </div>
             </div>
-            <div class="work-post-image" style="background:url(/public/images/work-images/social-features-in-kindle/thumbnail.png); background-size: cover; background-position: center bottom;">
+            <div class="work-post-image" style="background:url(/public/images/work-images/social-features-in-kindle/thumbnail.jpg); background-size: cover; background-position: center bottom;">
             </div>
-          </div> -->
+          </div>
           <!-- <div class="work-post">
             <div class="work-post-text">
               <h2 class="flex-title"><a href="/">Something you use to help</a></h2>
@@ -203,6 +213,7 @@
       <!-- <li><a href="/">Personal Projects</a></li> -->
       <li><a href="/blog/index.html">Blog</a></li>
       <li><a href="https://www.dropbox.com/s/c3xc43pedtj0k3z/Resume-Arturo-Goicochea-20150815-v4.pdf?dl=0">Résumé</a></li>
+      <li><a href="#" data-scroll href="#contact-pane-anchor" onclick="show_contact_pane('contact-info-pane-id');">Contact</a></li>
       <!-- <li><a href="/experiments.html">Experiments</a></li> -->
     </ul>
     <ul>
@@ -227,6 +238,17 @@
   <script src="/public/javaScript/scroll.min.js"></script>
   <script>
       smoothScroll.init();
+  </script>
+  <script type="text/javascript">
+  function show_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.add("contact-info-pane-shown");
+  }
+
+  function hide_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.remove("contact-info-pane-shown");
+  }
   </script>
 </footer>
 

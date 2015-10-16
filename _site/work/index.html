@@ -7,8 +7,7 @@
   <title>Arturo Goicochea is a UX Designer</title>
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="p:domain_verify" content="49a67071542a342fde60c7b9caa16c52"/>  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="/public/css/normalize.css">
   <link rel="stylesheet" href="/public/css/main.css">
@@ -47,7 +46,18 @@
 
 </head>
 
+
 <body class="home">
+
+  <div id="contact-info-pane-id" class="contact-info-pane">
+  <div class="flexbox-container">
+    <ul>
+      <li><strong>Email</strong>: arturo@arturogoicochea.com</li>
+      <li><strong>Twitter</strong>: @arturogoicochea</li>
+    </ul>
+    <a href="#" onclick="hide_contact_pane('contact-info-pane-id');"><h4>Close</h4></a>
+  </div>
+</div>
 
   <header>
     <div class="title">
@@ -58,7 +68,7 @@
         <li><a href="/work/index.html" class="selected work-menu-link">Work</a></li>
         <li><a href="/blog/index.html" class="blog-menu-link">Blog</a></li>
         <li><a href="/about/index.html" class="about-menu-link">About</a></li>
-        <li><a href="mailto:arturo@arturogoicochea.com" class="about-menu-link">Let's Talk</a></li>
+        <li><a href="#" id="contact-pane-anchor" class="about-menu-link" onclick="show_contact_pane('contact-info-pane-id');">Contact</a></li>
       </ul>
       <script src="/public/javaScript/scroll.min.js"></script>
 </header>
@@ -151,6 +161,7 @@
       <!-- <li><a href="/">Personal Projects</a></li> -->
       <li><a href="/blog/index.html">Blog</a></li>
       <li><a href="https://www.dropbox.com/s/c3xc43pedtj0k3z/Resume-Arturo-Goicochea-20150815-v4.pdf?dl=0">Résumé</a></li>
+      <li><a href="#" data-scroll href="#contact-pane-anchor" onclick="show_contact_pane('contact-info-pane-id');">Contact</a></li>
       <!-- <li><a href="/experiments.html">Experiments</a></li> -->
     </ul>
     <ul>
@@ -175,6 +186,17 @@
   <script src="/public/javaScript/scroll.min.js"></script>
   <script>
       smoothScroll.init();
+  </script>
+  <script type="text/javascript">
+  function show_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.add("contact-info-pane-shown");
+  }
+
+  function hide_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.remove("contact-info-pane-shown");
+  }
   </script>
 </footer>
 

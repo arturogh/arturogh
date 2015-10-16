@@ -6,3 +6,58 @@
 @import 'elements/about'
 @import 'elements/single'
 @import 'elements/custom'
+
+$contact-info-pane-height: 100px
+$contact-info-mobile-pane-height: 120px
+$contact-info-pane-padding: 20px
+
+#contact-info-pane-id
+  background: $about-color
+  color: white
+  font-family: $heading-font-family
+  height: $contact-info-pane-height
+  @media screen and (max-width:600px)
+    height: $contact-info-mobile-pane-height
+  padding: $contact-info-pane-padding
+  transition-property: margin-top
+  transition-duration: 0.3s
+  transition-timing-function: ease-in
+
+  .flexbox-container
+    +display(flex)
+    +justify-content(space-between)
+    +outer-container
+
+    @media screen and (max-width:600px)
+      display: block
+
+    a
+      color: white
+      font-family: $heading-font-family
+      width: 50%
+      @media screen and (max-width:600px)
+        display: block
+        padding-top: 20px
+        width: 50%
+      text-align: right
+
+    ul
+      width: 50%
+      @media screen and (max-width:600px)
+        width: 100%
+      li
+        text-align: left
+
+
+
+.contact-info-pane
+  margin-top: -$contact-info-pane-height
+
+  @media screen and (max-width:600px)
+    margin-top: -$contact-info-mobile-pane-height
+
+.contact-info-pane-shown
+  margin-top: 0
+
+.buttons
+  padding-top: 150px

@@ -7,6 +7,7 @@
       <!-- <li><a href="/">Personal Projects</a></li> -->
       <li><a href="{{ site.baseurl }}/blog/index.html">Blog</a></li>
       <li><a href="{{ site.resume }}">Résumé</a></li>
+      <li><a href="#" data-scroll href="#contact-pane-anchor" onclick="show_contact_pane('contact-info-pane-id');">Contact</a></li>
       <!-- <li><a href="{{ site.baseurl }}/experiments.html">Experiments</a></li> -->
     </ul>
     <ul>
@@ -31,5 +32,16 @@
   <script src="{{ site.baseurl }}/public/javaScript/scroll.min.js"></script>
   <script>
       smoothScroll.init();
+  </script>
+  <script type="text/javascript">
+  function show_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.add("contact-info-pane-shown");
+  }
+
+  function hide_contact_pane(id) {
+     var e = document.getElementById(id);
+     e.classList.remove("contact-info-pane-shown");
+  }
   </script>
 </footer>

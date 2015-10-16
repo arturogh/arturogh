@@ -1692,4 +1692,73 @@ a.button {
     background: #E91E63;
     color: #fff; }
 
+#contact-info-pane-id {
+  background: #E91E63;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 100px;
+  padding: 20px;
+  transition-property: margin-top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; }
+  @media screen and (max-width: 600px) {
+    #contact-info-pane-id {
+      height: 120px; } }
+  #contact-info-pane-id .flexbox-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #contact-info-pane-id .flexbox-container::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (max-width: 600px) {
+      #contact-info-pane-id .flexbox-container {
+        display: block; } }
+    #contact-info-pane-id .flexbox-container a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      width: 50%;
+      text-align: right; }
+      @media screen and (max-width: 600px) {
+        #contact-info-pane-id .flexbox-container a {
+          display: block;
+          padding-top: 20px;
+          width: 50%; } }
+    #contact-info-pane-id .flexbox-container ul {
+      width: 50%; }
+      @media screen and (max-width: 600px) {
+        #contact-info-pane-id .flexbox-container ul {
+          width: 100%; } }
+      #contact-info-pane-id .flexbox-container ul li {
+        text-align: left; }
+
+.contact-info-pane {
+  margin-top: -100px; }
+  @media screen and (max-width: 600px) {
+    .contact-info-pane {
+      margin-top: -120px; } }
+
+.contact-info-pane-shown {
+  margin-top: 0; }
+
+.buttons {
+  padding-top: 150px; }
+
 /*# sourceMappingURL=main.css.map */

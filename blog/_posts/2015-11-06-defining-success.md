@@ -7,7 +7,7 @@ group: 'post'
 excerpt: Knowing what success means to you is essential to happiness
 ---
 
-<p>A <a href="https://medium.com/@downtohoerth/why-i-didn-t-apply-for-jobs-after-college-and-instead-defined-mysuccess-47b5041732fc">post by Eva Hoerth</a> inspired me to write and share what success means to me. Here goes:</p>
+<p>A <a href="https://medium.com/@downtohoerth/why-i-didn-t-apply-for-jobs-after-college-and-instead-defined-mysuccess-47b5041732fc" target="_blank">post by Eva Hoerth</a> inspired me to write and share what success means to me. Here goes:</p>
 
 <h2 style="font-weight: 300">Meet your honest expectations, with compassion</h2>
 

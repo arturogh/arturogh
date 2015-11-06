@@ -42,4 +42,4 @@ excerpt: Knowing what success means to you is essential to happiness
 
 <p>Like <a href="https://medium.com/@downtohoerth/why-i-didn-t-apply-for-jobs-after-college-and-instead-defined-mysuccess-47b5041732fc">Eva</a> said, if you don’t know what your passion is, it’s worth spending the time to find it. Connect with people, learn new things, explore boldly and find yourself. Because, at the end, it comes to this:</p>
 
-<h3 style="text-align: center">Until you find yourself, you won’t know where to go.</h3>
+<h3 style="text-align: center; font-weight: 300">Until you find yourself, you won’t know where to go.</h3>

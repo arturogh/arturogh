@@ -842,7 +842,7 @@ header {
         header .title h1 {
           font-size: 1.9em; } }
     header .title span {
-      color: #A8A8A8;
+      color: #808080;
       font-weight: 400;
       font-family: "Open Sans", sans-serif; }
 
@@ -913,7 +913,7 @@ ul.filter-menu {
     ul.filter-menu li:first-of-type {
       padding-left: 0; }
     ul.filter-menu li a {
-      color: #A8A8A8;
+      color: #808080;
       font-family: "Open Sans", sans-serif; }
       @media screen and (max-width: 768px) {
         ul.filter-menu li a {
@@ -1003,7 +1003,7 @@ section.home-container {
             font-weight: 500; } }
       section.home-container .home-section .text-section p, section.home-container .home-section .text-section ul li, section.home-container ul .home-section .text-section li {
         font-size: 1em;
-        color: #A8A8A8;
+        color: #808080;
         font-weight: 300;
         padding-bottom: 1.44em; }
         @media screen and (max-width: 767px) {
@@ -1066,7 +1066,7 @@ section.home-container {
       margin-bottom: 0.48em;
       font-size: 1.4em;
       font-weight: 500;
-      color: #A8A8A8; }
+      color: #808080; }
     section.home-container .home-testimonial .testimonial {
       float: left;
       display: block;
@@ -1146,7 +1146,7 @@ section.home-container {
         section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-name {
           margin-left: 20px; }
           section.home-container .home-testimonial .testimonial .testimonial-flex-container .testimonial-name span {
-            color: #A8A8A8;
+            color: #808080;
             font-size: 0.8em;
             font-weight: 300;
             display: block;
@@ -1255,7 +1255,7 @@ section.home-container {
         font-weight: 300;
         padding: 0 0 1.68em;
         margin: 0 auto;
-        color: #A8A8A8;
+        color: #808080;
         line-height: 1.6; }
         @media screen and (max-width: 1087px) {
           .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
@@ -1263,15 +1263,15 @@ section.home-container {
         @media screen and (max-width: 767px) {
           .work-posts-feed .work-posts-box .work-post .work-post-text p, .work-posts-feed .work-posts-box .work-post .work-post-text section ul li, section ul .work-posts-feed .work-posts-box .work-post .work-post-text li {
             font-size: 1em;
-            color: #A8A8A8;
+            color: #808080;
             padding: 0 0 1.2em; } }
       .work-posts-feed .work-posts-box .work-post .work-post-text .details span {
-        color: #A8A8A8;
+        color: #808080;
         display: block;
         font-weight: 300;
         font-size: 1.1em;
         font-family: "Open Sans", sans-serif;
-        color: #A8A8A8; }
+        color: #808080; }
         .work-posts-feed .work-posts-box .work-post .work-post-text .details span:first-of-type {
           padding-bottom: 0.6em; }
         @media screen and (max-width: 1087px) {
@@ -1287,7 +1287,7 @@ section.home-container {
     display: block;
     width: 100%;
     padding: 0.6em;
-    color: #A8A8A8;
+    color: #808080;
     font-family: "Open Sans", sans-serif;
     padding-bottom: 2.4em; }
   .work-posts-feed.projects .personal-projects-feed {
@@ -1303,7 +1303,7 @@ section.home-container {
       display: block;
       margin-right: 2.35765%;
       width: 40.29137%;
-      border: 1px solid #A8A8A8;
+      border: 1px solid #808080;
       border-radius: 4px;
       padding: 0.8em;
       margin-bottom: 2.4em; }
@@ -1325,7 +1325,7 @@ section.home-container {
           margin-right: 0; } }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item .project-type, .work-posts-feed.projects .personal-projects-feed .personal-project-item .date {
         font-family: "Open Sans", sans-serif;
-        color: #A8A8A8;
+        color: #808080;
         font-size: 0.8em; }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item h2 {
         padding: 0 0 0.6em;
@@ -1339,7 +1339,7 @@ section.home-container {
             color: #00BFA5; }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item p, .work-posts-feed.projects .personal-projects-feed .personal-project-item section ul li, section ul .work-posts-feed.projects .personal-projects-feed .personal-project-item li {
         font-size: 1em;
-        color: #A8A8A8;
+        color: #808080;
         padding-bottom: 2.4em; }
       .work-posts-feed.projects .personal-projects-feed .personal-project-item .date {
         display: block;
@@ -1401,7 +1401,7 @@ section.blog-posts {
           section.blog-posts .blog-post .post-text h2 a:hover {
             color: #2ebcfc; }
       section.blog-posts .blog-post .post-text p, section.blog-posts .blog-post .post-text ul li, section.blog-posts ul .blog-post .post-text li {
-        color: #A8A8A8;
+        color: #808080;
         padding: 0 0 0.6em;
         margin: 0;
         line-height: 1.6em;
@@ -1565,7 +1565,7 @@ section {
       border-bottom: solid 1px #00BFA5;
       font-weight: 300;
       font-size: 1.8em;
-      color: #A8A8A8; }
+      color: #808080; }
       section h3.subtitle strong {
         font-size: 1.4em;
         font-weight: 400;
@@ -1665,10 +1665,10 @@ h2.blog-post-title {
   font-size: 2.6em;
   font-weight: 600;
   text-align: center;
-  color: #A8A8A8; }
+  color: #808080; }
 
 a.button {
-  color: #A8A8A8;
+  color: #808080;
   font-family: "Open Sans", sans-serif;
   display: inline-block !important;
   padding: 10px;

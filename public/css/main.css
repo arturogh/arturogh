@@ -1160,7 +1160,7 @@ section.home-container {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto 0;
-  padding-top: 0.6em; }
+  padding-top: 0.3em; }
   .work-posts-feed::after {
     clear: both;
     content: "";
@@ -1174,7 +1174,8 @@ section.home-container {
 
   .work-posts-feed .work-posts-box h2 {
     margin-bottom: 1.2em;
-    padding: 0; }
+    padding: 0;
+    font-size: 2.2em; }
   .work-posts-feed .work-posts-box .work-post {
     max-width: 68em;
     margin-left: auto;

@@ -23,14 +23,14 @@ excerpt: These are my spots for getting spectacular coffee in Seattle.
 
 <li>
 <!-- <img src="slate"> -->
-<h3><strong><a href="http://elmcoffeeroasters.com">Slate</a></strong> <em>in Ballard.</em></h3>
+<h3><strong><a href="http://www.slatecoffee.com">Slate</a></strong> <em>in Ballard.</em></h3>
 <p>These guys love coffee and it shows. They have something called a deconstructed machiatto: an espresso shot + milk + a machiatto (3 drinks). Their coffee and flavours is also top notch. They roast their own beans and carry others too.</p>
 </li>
 
 <li>
 <!-- <img src="elm"> -->
 <!-- <ul><li><strong>Workability</strong></li><li>No plugs</li><li>Has wifi</li><li>Tables and bar</li></ul> -->
-<h3><strong><a href="">Elm</a></strong> <em>in Pioneer Square.</em></h3>
+<h3><strong><a href="http://elmcoffeeroasters.com">Elm</a></strong> <em>in Pioneer Square.</em></h3>
 <p>Super nice place, very very consistently amazing coffee. Less surprising flavors than the first 2, but that doesn't make them any less awesome. No plugs here, so laptop bearers beware!</p>
 </li>
 

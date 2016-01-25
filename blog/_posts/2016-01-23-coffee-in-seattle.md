@@ -91,7 +91,7 @@ excerpt: These are my spots for getting spectacular coffee in Seattle.
 <li>
 <!-- <img src="storyville"> -->
 <h3><strong><a href="http://storyville.com">Storyville</a></strong> <em>in Pike Place and more.</em></h3>
-<p>They have really good coffee, but they have amazing pastries, made fresh, on the spot in their hidden kitches, every couple of hours. Their fols are also super happy all the time, and the cafes are mega cozy. They have mostky sofas though, with a few tables and some "bar" style tables + bench spaces.</p>
+<p>They have really good coffee, but they have amazing pastries, made fresh, on the spot in their hidden kitchen, every couple of hours. Their baristas are also super happy all the time, and the cafes are mega cozy. They have mostly sofas though, with a few tables and some "bar" style tables + bench spaces.</p>
 </li>
 
 <li>

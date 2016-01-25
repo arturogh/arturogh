@@ -53,6 +53,12 @@ excerpt: These are my spots for getting spectacular coffee in Seattle.
 </li>
 
 <li>
+<!-- <img src="vif"> -->
+<h3><strong><a href="http://vifseattle.com">Vif Coffee and Wine</a></strong> <em>in Fremont.</em></h3>
+<p>Up in Fremont, this amazing place serves coffee, wine, cheese and a bunch of other tasty stuff. They carry Olympia Coffee (YES!) and are in an all glass wall location. Also, they have home-brewed chai if that's your thing. And...they also sell some gourmet stuff. </p>
+</li>
+
+<li>
 <!-- <img src="victrola"> -->
 <h3><strong><a href="http://www.victrolacoffee.com">Victrola</a></strong> <em>in Capitol Hill.</em></h3>
 <p>They roast the beans in this location, have a neat selection of pastries and sandwiches and other beverages. If espresso is your thing, get the single origin one!</p>
